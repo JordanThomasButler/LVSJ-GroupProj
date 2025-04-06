@@ -1,0 +1,146 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #a32b2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Job Section Container */
+.job-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+}
+
+/* Job Row */
+.job-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Centered Row for AI/ML Engineer */
+.job-row.center-row {
+    justify-content: center;
+}
+
+/* Job Section Styles */
+.job-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    width: 48%; /* Two sections per row */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;  /* Ensures that it doesn't stretch more than the container */
+}
+
+/* Header for Job Section */
+.job-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #a32b2b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.job-header h2 {
+    font-size: 1.5rem;
+}
+
+.job-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Job Description */
+.job-description {
+    display: none;
+    margin-top: 15px;
+}
+
+.job-description h3 {
+    color: #333;
+}
+
+.job-description ul {
+    padding-left: 20px;
+}
+
+.job-description li {
+    margin-bottom: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .job-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-section {
+        width: 100%;
+    }
+}
