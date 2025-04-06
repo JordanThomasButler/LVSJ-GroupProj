@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<head> <!-- AI Was used for all descriptions/salary/requirements of positions (The ideas for them)-->
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Descriptions</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script>
-        function toggleJobDescription(id) {
-            const allDescriptions = document.querySelectorAll('.job-description');
-            allDescriptions.forEach(description => {
-                if (description.id !== id) {
-                    description.style.display = 'none';
-                }
-            });
-
-            const content = document.getElementById(id);
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_document_queryselector.asp and https://stackoverflow.com/questions/62341048/javascript-queryselector-for-select-element
+    const allDescriptions = document.querySelectorAll('.job-description'); // Selects all elements with the class 'job-description'
+    
+    // Loops through each description element and hides all except the one clicked
+    allDescriptions.forEach(description => {
+        if (description.id !== id) {
+            description.style.display = 'none'; // Hide other descriptions
         }
+    });
+
+    // Gets the element by ID and toggles its visibility
+    const content = document.getElementById(id); // Fetch the description with the provided 'id'
+    
+    // Checks if the content is currently hidden, and toggles its visibility
+    content.style.display = content.style.display === 'none' ? 'block' : 'none'; // If it's hidden, show it; if it's shown, hide it
+}
+
     </script>
 </head>
 <body>
