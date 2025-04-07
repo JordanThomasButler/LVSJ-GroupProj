@@ -7,12 +7,14 @@
     <title>Job Descriptions</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <script>
+        //Gen AI Was used quite a bit in the below alongside the sources provided, I struggled to make this myself and needed help.
 function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_document_queryselector.asp and https://stackoverflow.com/questions/62341048/javascript-queryselector-for-select-element
     const allDescriptions = document.querySelectorAll('.job-description'); // Selects all elements with the class 'job-description'
     
     // Loops through each description element and hides all except the one clicked
     allDescriptions.forEach(description => {
-        if (description.id !== id) {
+        if (description.id !== id) 
+        {
             description.style.display = 'none'; // Hide other descriptions
         }
     });
