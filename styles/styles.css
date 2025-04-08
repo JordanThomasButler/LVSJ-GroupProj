@@ -16,20 +16,14 @@ header .header-content {
 aside.job-links {
     background-color: #a32b2b;
     color: white;
-    width: 150px;
+    width: 100px;
     padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-aside.job-links h3 {
-    margin-bottom: 25px;
-    margin-left: 10%;
-    font-size: 24px;
-    font-weight: bold;
+    z-index: 11; 
 }
 
 aside.job-links ul {
