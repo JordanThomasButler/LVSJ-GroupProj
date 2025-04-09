@@ -6,13 +6,15 @@ body.job-page {
     box-sizing: border-box;
 }
 
+/*Alters the headers of the thing with "header-content" class*/
 header .header-content {
-    max-width: 80%; /* Restrict width to 70% */
-    margin: 0 auto; /* Center the header content */
-    padding: 20px 0; /* Add padding to create spacing */
+    max-width: 80%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
     text-align: center;
 }
 
+/*alters the asides of the things with the "job-links" class */
 aside.job-links {
     background-color: #a32b2b;
     color: white;
@@ -26,14 +28,17 @@ aside.job-links {
     z-index: 11; 
 }
 
+/*Makes the list in the aside "job links" list style: none */
 aside.job-links ul {
     list-style: none;
 }
 
+/*Thinks of the class with the list element have an added bottom margin (moves it up) */
 aside.job-links ul li {
     margin-bottom: 15px;
 }
 
+/*Alters things with the a tag (hyperlink), here it means the text you see on the side*/
 aside.job-links ul li a {
     color: white;
     font-size: 18px;
@@ -43,12 +48,13 @@ aside.job-links ul li a {
     transition: background-color 0.3s;
 }
 
+/*When you hover over the things mentioned above the background is changed and a border is created to show it is hovered over*/
 aside.job-links ul li a:hover {
     background-color: #ae3a3a;
     border-radius: 5px;
 }
 
-/* Header */
+/* Header for the jobs  */
 header.job-header {
     background-color: #a32b2b;
     color: white;
@@ -62,27 +68,31 @@ header.job-header {
     margin-left: 10%;
 }
 
+/* Removes padding and sets list style of the unordered list to none */
 header.job-header nav ul {
     list-style: none;
     padding: 0;
 }
 
+/* Displays it inline and adds a margin on the right to move it left */
 header.job-header nav ul li {
     display: inline;
     margin-right: 15px;
 }
 
+/* Alters the things with the a tag within the aforementioned tags */
 header.job-header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+/* Alters all h1 tags within the "job header" class, removing the margin */
 header.job-header h1 {
     font-size: 2.5rem;
     margin: 0; /* Remove margin to make the title stick to the edges */
 }
 
-/* Main Content */
+/* Alters the main content for the job descriptions */
 main.job-main-content {
     margin-top: 100px;
     display: flex;
@@ -91,7 +101,7 @@ main.job-main-content {
     flex-wrap: wrap;
 }
 
-/* Job Section Container */
+/* Job Section Container, used to create and alter the container the job data holds */
 section.job-section-container {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +110,7 @@ section.job-section-container {
     margin-left: auto; /* Align it to the right */
 }
 
-/* Job Row */
+/* Alters the design of the job row, setting the difference between each row and how that difference is determined/alters if a row is expanded. */
 section.job-row {
     display: flex;
     justify-content: space-between;
@@ -108,12 +118,12 @@ section.job-row {
     width: 100%;
 }
 
-/* Centered Row for AI/ML Engineer */
+/* Centered Row for AI/ML Engineer that is on a row by itself, it has its own class for this specifically*/
 section.job-row.center-row {
     justify-content: center;
 }
 
-/* Job Section Styles */
+/* Alters the appearance of the entire job section */
 section.job-section {
     background-color: #f4f4f4;
     padding: 15px;
@@ -141,10 +151,12 @@ section.job-section .job-header {
     position: relative;
 }
 
+/* Alters h2 headings within the job section */
 section.job-section .job-header h2 {
     font-size: 1.5rem;
 }
 
+/* Alters the images within the job section */
 section.job-section .job-header .job-image {
     width: 100%;
     height: 250px;
@@ -152,25 +164,28 @@ section.job-section .job-header .job-image {
     border-radius: 8px;
 }
 
-/* Job Description */
+/* Specifcially alters the Job Description */
 section.job-section .job-description {
     display: none;
     margin-top: 15px;
 }
 
+/* Changes colour of h3 elements */
 section.job-section .job-description h3 {
     color: #333;
 }
 
+/* Padding to the left of the ul elements of the job description. */
 section.job-section .job-description ul {
     padding-left: 20px;
 }
 
+/* Adds a marging to the bottom of the list elements in the job description class, this moves it up slightly */
 section.job-section .job-description li {
     margin-bottom: 5px;
 }
 
-/* Footer Section */
+/* ALters the Footer Section of the job containers*/
 footer.job-footer {
     background-color: #333;
     color: white;
@@ -179,22 +194,27 @@ footer.job-footer {
     margin-top: 20px;
 }
 
+/* Hyperlink of the footer section altered */
 footer.job-footer a {
     color: #ccc;
     text-decoration: none;
 }
 
+/* When you hover over the hyperlink at the footer of the job container */
 footer.job-footer a:hover {
     color: white;
 }
 
-/* Media Queries */
+/* Size alteration/limiting */
 @media (max-width: 800px) {
+    
+    /* Alters the row size of the containers to fit within certain bounds */
     section.job-row {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Sets the width and height of the section job sections. */
     section.job-section {
         width: 100%;
         height: 100%;
