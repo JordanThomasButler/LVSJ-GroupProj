@@ -1,5 +1,13 @@
-/* General Layout */
+/* General Layout for job page*/
 body.job-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Layout for application page*/
+body.application-page {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -66,19 +74,6 @@ header.job-header {
     z-index: 10; /* Ensure it stays on top */
     text-align: center;
     margin-left: 10%;
-}
-
-/* Header for application page */
-header.apply-header {
-    background-color: #a32b2b;
-    color: white;
-    padding: 0; /* Remove padding to make the header full width */
-    position: fixed; /* Position the header at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the header take up the full width */
-    z-index: 10; /* Ensure it stays on top */
-    text-align: center;
 }
 
 /* Removes padding and sets list style of the unordered list to none */
@@ -232,4 +227,23 @@ footer.job-footer a:hover {
         width: 100%;
         height: 100%;
     }
+}
+
+/* Header for application page */
+header.apply-header {
+    background-color: #a32b2b;
+    color: white;
+    padding: 0; /* Remove padding to make the header full width */
+    position: static; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the header take up the full width */
+    z-index: 10; /* Ensure it stays on top */
+    text-align: center;
+}
+
+div.form-section {
+    margin-top: 20px; /* This stops the form from going 'under' the header element */
+    margin-left: 180px; /* This stops the form from going 'under' the aside element */
+    padding: 20px;
 }
