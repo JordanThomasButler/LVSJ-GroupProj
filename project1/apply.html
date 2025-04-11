@@ -26,33 +26,61 @@
     <!--Container for the form-->
     <div class="form-section">
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-            <label for="job-reference-number">Job Reference Number</label>
+            <fieldset class="form-details">
+                <legend>Details</legend>
+                <label for="job-reference-number">Job Reference Number</label>
+                <select id="job-reference-number" name="job-reference-number" required>
+                    <option value="">Please Select</option>
+                    <option value="Software Developer">G01-123</option>
+                    <option value="Network Administrator">G02-123</option>
+                    <option value="Data Analyst">G03-123</option>
+                    <option value="Cybersecurity Specialist">G04-123</option>
+                    <option value="IT Support Technician">G05-123</option>
+                    <option value="Cloud Engineer">G06-123</option>
+                    <option value="AI/ML Engineer">G07-123</option>
+                </select>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z]{3,20}">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="'date" name="date" placeholder="dd/mm/yy">
+            </fieldset>
+
+            <fieldset class="form-gender">
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+            </fieldset>
+
+            <fieldset class="form-address">
+                <label for="street-address">Street Address</label>
+                
+                <label for="suburb-or-town">Suburb/Town</label>
+
+                <label for="state">State</label>
+
+                <label for="postcode">Postcode</label>
+            </fieldset>
             
-            <label for="first-name">First Name</label>
+            <fieldset class="form-contact-info">
+                <label for="email-address">Email Address</label>
 
-            <label for="last-name">Last Name</label>
+                <label for="phone-number">Phone Number</label>
+            </fieldset>
 
-            <label for="date-of-birth">Date of Birth</label>
+            <fieldset class="form-skills">
+                <label for="technical-skills">Required Technical Skills</label>
 
-            <label for="gender">Gender</label>
+                <label for="other-skills">Other Skills</label>
+            </fieldset>
 
-            <label for="street-address">Street Address</label>
-
-            <label for="suburb-or-town">Suburb/Town</label>
-
-            <label for="state">State</label>
-
-            <label for="postcode">Postcode</label>
-
-            <label for="email-address">Email Address</label>
-
-            <label for="phone-number">Phone Number</label>
-
-            <label for="technical-skills">Required Technical Skills</label>
-
-            <label for="other-skills">Other Skills</label>
-
-            <input type="submit" value="Submit">
+            <input type="submit" value="Apply">
             <input type="reset">
         </form>
     </div>
