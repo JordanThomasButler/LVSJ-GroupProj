@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!-- AI Was used for all descriptions/salary/requirements of positions (The ideas for them)-->
+<head> <!-- AI Was used for all descriptions/salary/requirements of positions-->
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Descriptions</title>
@@ -13,7 +13,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
     
     // Loops through each description element and hides all except the one clicked
     allDescriptions.forEach(description => {
-        if (description.id !== id) 
+        if (description.id !== id) // if the id = the id of the clicked one (for each) then hide the other descriptions
         {
             description.style.display = 'none'; // Hide other descriptions
         }
@@ -29,7 +29,6 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
     </script>
 </head>
 <body>
-    <!-- Header and Menu Section -->
     <header class="job-header">
         <div class="header-content">
             <h1>Job Descriptions</h1>
@@ -44,12 +43,10 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
         </ul>
     </aside>
 
-    <!-- Main Content -->
     <main class="job-main-content">
-        <!-- Job Descriptions Section -->
         <section class="job-section-container">
+            <!-- Row 1: Software Developer Job and Network administrator -->
             <section class="job-row">
-                <!-- Software Developer Job -->
                 <section class="job-section" id="software-developer">
                     <div class="job-header" onclick="toggleJobDescription('software-developer-description')">
                         <img src="Images/SE.jpg" alt="Software Developer Image" class="job-image">
@@ -85,8 +82,6 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                         </ul>
                     </div>
                 </section>
-
-                <!-- Network Administrator Job -->
                 <section class="job-section" id="network-administrator">
                     <div class="job-header" onclick="toggleJobDescription('network-administrator-description')">
                         <img src="Images/NE.jpg" alt="Network Administrator Image" class="job-image">
@@ -123,7 +118,6 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                     </div>
                 </section>
             </section>
-
             <!-- Row 2: Data Analyst and Cybersecurity Specialist -->
             <section class="job-row">
                 <section class="job-section" id="data-analyst">
@@ -198,7 +192,6 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                     </div>
                 </section>
             </section>
-
             <!-- Row 3: IT Support Technician and Cloud Engineer -->
             <section class="job-row">
                 <section class="job-section" id="it-support-technician">
@@ -273,7 +266,6 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                     </div>
                 </section>
             </section>
-
             <!-- Row 4: AI/ML Engineer -->
             <section class="job-row center-row">
                 <section class="job-section" id="ai-ml-engineer">
