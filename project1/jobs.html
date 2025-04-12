@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head> <!-- AI Was used for all descriptions/salary/requirements of positions-->
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Descriptions</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <script>
-        //Gen AI Was used quite a bit in the below alongside the sources provided, I struggled to make this myself and needed help.
-function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_document_queryselector.asp and https://stackoverflow.com/questions/62341048/javascript-queryselector-for-select-element
-    const allDescriptions = document.querySelectorAll('.job-description'); // Selects all elements with the class 'job-description'
-    
-    // Loops through each description element and hides all except the one clicked
-    allDescriptions.forEach(description => {
-        if (description.id !== id) // if the id = the id of the clicked one (for each) then hide the other descriptions
-        {
-            description.style.display = 'none'; // Hide other descriptions
-        }
-    });
-
-    // Gets the element by ID and toggles its visibility
-    const content = document.getElementById(id); // Fetch the description with the provided 'id'
-    
-    // Checks if the content is currently hidden, and toggles its visibility
-    content.style.display = content.style.display === 'none' ? 'block' : 'none'; // If it's hidden, show it; if it's shown, hide it
-}
-
-    </script>
 </head>
-<body>
+<body class="job-page">
     <header class="job-header">
         <div class="header-content">
             <h1>Job Descriptions</h1>
         </div>
     </header>
-    
+
     <aside class="job-links">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -46,14 +24,16 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
 
     <main class="job-main-content">
         <section class="job-section-container">
-            <!-- Row 1: Software Developer Job and Network administrator -->
+            <!-- Job Row 1 -->
             <section class="job-row">
-                <section class="job-section" id="software-developer">
-                    <div class="job-header" onclick="toggleJobDescription('software-developer-description')">
-                        <img src="Images/SE.jpg" alt="Software Developer Image" class="job-image">
+                <!-- Software Developer -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-software" class="toggle-box">
+                    <label for="toggle-software" class="job-header">
+                        <img src="Images/SE.jpg" alt="Software Developer" class="job-image">
                         <h2>Software Developer</h2>
-                    </div>
-                    <div id="software-developer-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G01-123</p>
                         <p><strong>Position Title:</strong> Software Developer</p>
                         <h3>Position Overview</h3>
@@ -69,7 +49,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Maintain and optimize existing applications.</li>
                             <li>Participate in code reviews and testing.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>5+ years of experience in software development.</li>
@@ -83,12 +63,15 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                         </ul>
                     </div>
                 </section>
-                <section class="job-section" id="network-administrator">
-                    <div class="job-header" onclick="toggleJobDescription('network-administrator-description')">
-                        <img src="Images/NE.jpg" alt="Network Administrator Image" class="job-image">
+    
+                <!-- Network Administrator -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-network" class="toggle-box">
+                    <label for="toggle-network" class="job-header">
+                        <img src="Images/NE.jpg" alt="Network Administrator" class="job-image">
                         <h2>Network Administrator</h2>
-                    </div>
-                    <div id="network-administrator-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G02-123</p>
                         <p><strong>Position Title:</strong> Network Administrator</p>
                         <h3>Position Overview</h3>
@@ -102,31 +85,31 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Monitor network performance and troubleshoot issues.</li>
                             <li>Implement network security protocols and policies.</li>
                             <li>Ensure system backups and disaster recovery plans are in place.</li>
-                            <li>Assist in network infrastructure upgrades and projects.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>3+ years of experience in network administration.</li>
                             <li>Proficiency with networking protocols (TCP/IP, DNS, DHCP).</li>
-                            <li>Strong knowledge of firewalls and VPNs.</li>
                         </ul>
                         <h4>Preferable:</h4>
                         <ul>
                             <li>Certifications such as CCNA, CompTIA Network+.</li>
-                            <li>Experience with network monitoring tools.</li>
                         </ul>
                     </div>
                 </section>
             </section>
-            <!-- Row 2: Data Analyst and Cybersecurity Specialist -->
+    
+            <!-- Job Row 2 -->
             <section class="job-row">
-                <section class="job-section" id="data-analyst">
-                    <div class="job-header" onclick="toggleJobDescription('data-analyst-description')">
-                        <img src="Images/DA.jpg" alt="Data Analyst Image" class="job-image">
+                <!-- Data Analyst -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-data-analyst" class="toggle-box">
+                    <label for="toggle-data-analyst" class="job-header">
+                        <img src="Images/DA.jpg" alt="Data Analyst" class="job-image">
                         <h2>Data Analyst</h2>
-                    </div>
-                    <div id="data-analyst-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G03-123</p>
                         <p><strong>Position Title:</strong> Data Analyst</p>
                         <h3>Position Overview</h3>
@@ -142,7 +125,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Collaborate with teams to define data requirements and goals.</li>
                             <li>Present findings to stakeholders with actionable recommendations.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>3+ years of experience in data analysis.</li>
@@ -156,13 +139,15 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                         </ul>
                     </div>
                 </section>
-
-                <section class="job-section" id="cybersecurity-specialist">
-                    <div class="job-header" onclick="toggleJobDescription('cybersecurity-specialist-description')">
-                        <img src="Images/CS.jpg" alt="Cybersecurity Specialist Image" class="job-image">
+    
+                <!-- Cybersecurity Specialist -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-cybersecurity" class="toggle-box">
+                    <label for="toggle-cybersecurity" class="job-header">
+                        <img src="Images/CS.jpg" alt="Cybersecurity Specialist" class="job-image">
                         <h2>Cybersecurity Specialist</h2>
-                    </div>
-                    <div id="cybersecurity-specialist-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G04-123</p>
                         <p><strong>Position Title:</strong> Cybersecurity Specialist</p>
                         <h3>Position Overview</h3>
@@ -178,7 +163,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Develop and maintain security documentation and policies.</li>
                             <li>Conduct vulnerability assessments and penetration testing.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>5+ years of experience in cybersecurity.</li>
@@ -193,14 +178,17 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                     </div>
                 </section>
             </section>
-            <!-- Row 3: IT Support Technician and Cloud Engineer -->
+    
+            <!-- Job Row 3 -->
             <section class="job-row">
-                <section class="job-section" id="it-support-technician">
-                    <div class="job-header" onclick="toggleJobDescription('it-support-technician-description')">
-                        <img src="Images/ST.jpg" alt="IT Support Technician Image" class="job-image">
+                <!-- IT Support Technician -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-it-support" class="toggle-box">
+                    <label for="toggle-it-support" class="job-header">
+                        <img src="Images/ST.jpg" alt="IT Support Technician" class="job-image">
                         <h2>IT Support Technician</h2>
-                    </div>
-                    <div id="it-support-technician-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G05-123</p>
                         <p><strong>Position Title:</strong> IT Support Technician</p>
                         <h3>Position Overview</h3>
@@ -216,7 +204,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Document issues and solutions to improve future support.</li>
                             <li>Provide training on software and hardware usage.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>2+ years of experience in IT support.</li>
@@ -230,13 +218,15 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                         </ul>
                     </div>
                 </section>
-
-                <section class="job-section" id="cloud-engineer">
-                    <div class="job-header" onclick="toggleJobDescription('cloud-engineer-description')">
-                        <img src="Images/Cloud.jpg" alt="Cloud Engineer Image" class="job-image">
+    
+                <!-- Cloud Engineer -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-cloud" class="toggle-box">
+                    <label for="toggle-cloud" class="job-header">
+                        <img src="Images/Cloud.jpg" alt="Cloud Engineer" class="job-image">
                         <h2>Cloud Engineer</h2>
-                    </div>
-                    <div id="cloud-engineer-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G06-123</p>
                         <p><strong>Position Title:</strong> Cloud Engineer</p>
                         <h3>Position Overview</h3>
@@ -252,7 +242,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Manage cloud security policies and access control.</li>
                             <li>Collaborate with teams to deploy applications and services in the cloud.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>4+ years of experience in cloud engineering.</li>
@@ -267,14 +257,17 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                     </div>
                 </section>
             </section>
-            <!-- Row 4: AI/ML Engineer -->
+    
+            <!-- Job Row 4 -->
             <section class="job-row center-row">
-                <section class="job-section" id="ai-ml-engineer">
-                    <div class="job-header" onclick="toggleJobDescription('ai-ml-engineer-description')">
-                        <img src="Images/AI.jpg" alt="AI/ML Engineer Image" class="job-image">
+                <!-- AI/ML Engineer -->
+                <section class="job-section">
+                    <input type="checkbox" id="toggle-ai-ml" class="toggle-box">
+                    <label for="toggle-ai-ml" class="job-header">
+                        <img src="Images/AI.jpg" alt="AI/ML Engineer" class="job-image">
                         <h2>AI/ML Engineer</h2>
-                    </div>
-                    <div id="ai-ml-engineer-description" class="job-description" style="display: none;">
+                    </label>
+                    <div class="job-description">
                         <p><strong>Position Reference:</strong> G07-123</p>
                         <p><strong>Position Title:</strong> AI/ML Engineer</p>
                         <h3>Position Overview</h3>
@@ -290,7 +283,7 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
                             <li>Collaborate with data scientists and engineers to deploy models.</li>
                             <li>Continuously improve model performance based on feedback and data.</li>
                         </ul>
-                        <h3>Required Qualifications, Skills, Knowledge and Attributes</h3>
+                        <h3>Required Qualifications</h3>
                         <h4>Essential:</h4>
                         <ul>
                             <li>5+ years of experience in AI/ML engineering.</li>
@@ -307,5 +300,16 @@ function toggleJobDescription(id) { //https://www.w3schools.com/jsref/met_docume
             </section>
         </section>
     </main>
+    
+
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
+        <nav>
+             <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg">Jira invite link</a> 
+        </nav>
+    </div>
+</footer>
 </body>
 </html>
