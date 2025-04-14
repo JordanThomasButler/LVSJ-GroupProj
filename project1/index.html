@@ -4,43 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Document</title>
+    <title>Tech Careers Inc.</title>
+    <style>
+        .content {
+            background-image: url('images/Tech.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 750px; /* Ensures full height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <!-- Sidebar Navigation -->
+    <aside class="job-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </aside>
 
-    <img src="images/logo.png" alt="Company Logo">
+    <!-- Main Content Section -->
+    <section class="content">
+        <div class="logo-overlay">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <h1>Join Our Team & Build the Future of Tech</h1>
+        <p>Explore exciting career opportunities with us</p> 
 
-<h1 hidden>Navigation</h1>
-<aside class="job-links">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
-        <li><a href="apply.html">Apply</a></li>
-        <li><a href="about.html">About Us</a></li>
-    </ul>
-</aside>
+        <!-- Job Description -->
+        <section class="description">
+            <p>
+                Our platform helps advertise IT job vacancies, detailing the qualifications, skills, and knowledge required for each role. Applicants can easily submit online applications, streamlining the hiring process and connecting talent with the right opportunities in the tech industry.
+            </p>
+        </section>
 
-<h2>Join Our Team & Build the Future of Tech</h2>
-<p>Explore exciting career opportunities with us</p> 
+        <!-- Application Form -->
+        <section class="application-form">
+            <form>
+                <a href="apply.html" class="apply-button">APPLY NOW</a>
+                <a href="jobs.html" class="jobs-button">JOBS AVAILABILITY</a>
+            </form>
+        </section>
+    </section>
 
-<form>
-    <label for="job-title">Job Title:</label>
-    <input type="text" id="job-title" name="job-title" placeholder="e.g. Software Engineer">
-    <button type="submit">APPLY NOW</button>
-</form>
+    <hr>
 
-<hr>
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
+            <nav>
+                <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
+                <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
+                <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">GitHub Project File</a>    
+            <p>Contact us at <a href="mailto:info@yourcompany.com.au">info@Techcareers.com.au</a></p>
+            </nav>
+        </div>
+    </footer>
 
-<footer class="main-footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
-        <nav>
-             <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
-             <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
-             <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">Github Project File</a>
-        </nav>
-    </div>
-    
 </body>
 </html>
-
