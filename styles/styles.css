@@ -41,6 +41,12 @@ aside.job-links ul {
     list-style: none;
 }
 
+aside.job-links .logo-image{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
 /*Thinks of the class with the list element have an added bottom margin (moves it up) */
 aside.job-links ul li {
     margin-bottom: 15px;
@@ -297,27 +303,31 @@ input::placeholder {
     font-style: italic;
 }
 
+/* Aligns the table so it is centered */
 table.skills-table {
     margin: auto;
     text-align: center;
 }
 
+/* Adds border to table element in application page */
 table.skills-table, th.skills-table-header, td.skills-table-data {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
+/* Using the span element, any text wrapped with <span> will become bold */
 span.bold {
     font-weight: bold;
-    text-align: center;
 }
 
+/* Resizes the form section of the application page and centers it */
 div.form-section {
     width: 80%;
     justify-content: center;
     margin-left: 250px;
 }
 
+/* The styling below is to add a border to the bottom of the text input elements which is red when the validation is invalid and green when it is valid */ 
 body.application-page input[type="text"]:invalid,
 body.application-page input[type="email"]:invalid {
     border: none;
@@ -328,91 +338,4 @@ body.application-page input[type="text"]:valid,
 body.application-page input[type="email"]:valid {
     border: none;
     border-bottom: 2px solid green;
-}
-
-/* Logo overlay */
-.logo-overlay {
-    position: absolute;
-    top: 35px;
-    left: 200px;
-}
-
-.logo-overlay img {
-    width: 220px; 
-}
-
-/* Background image */
-.content {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-}
-
-/* Title */
-.content h1 {
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Subtitle  */
-.content p {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Centered white description box */
-.description {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.description p {
-    font-size: 30px;
-    color: #333;
-}
-
-/* Styling for application button */
-.application-form {
-    text-align: center;
-}
-
-.apply-button, .jobs-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.apply-button:hover {
-    background-color: #ff6666;
-}
-
-/* Jobs Availability button styling */
-.jobs-button {
-    background-color: #ff4d4d;
-}
-
-.jobs-button:hover {
-    background-color: #ff6666;
 }
