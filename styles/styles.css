@@ -41,6 +41,12 @@ aside.job-links ul {
     list-style: none;
 }
 
+aside.job-links .logo-image{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
 /*Thinks of the class with the list element have an added bottom margin (moves it up) */
 aside.job-links ul li {
     margin-bottom: 15px;
