@@ -40,11 +40,11 @@
                     <option value="AI/ML Engineer">G07-123</option>
                 </select>
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}">
+                <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}" placeholder="First Name">
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z]{3,20}">
+                <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z -]{3,20}" placeholder="Last Name">
                 <label for="date-of-birth">Date of Birth</label>
-                <input type="date" id="'date" name="date" placeholder="dd/mm/yy">
+                <input type="date" id="'date" name="date" placeholder="dd/mm/yyyy">
             </fieldset>
 
             <fieldset class="form-gender">
@@ -59,25 +59,154 @@
             </fieldset>
 
             <fieldset class="form-address">
+                <legend>Address</legend>
                 <label for="street-address">Street Address</label>
-                
+                <input type="text" id="street-address" name="street-address" required pattern="[A-Za-z0-9]{1,40}" placeholder="Your Street Address">
                 <label for="suburb-or-town">Suburb/Town</label>
-
+                <input type="text" id="suburb-or-town" name="suburb-or-town" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
                 <label for="state">State</label>
-
+                <select id="state" name="state" required>
+                    <option value="">Choose Option</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
                 <label for="postcode">Postcode</label>
+                <input type="text" name="postcode" id="postcode" required pattern="\d{4}" placeholder="0000">
             </fieldset>
             
             <fieldset class="form-contact-info">
+                <legend>Contact Information</legend>
                 <label for="email-address">Email Address</label>
-
+                <input type="email" id="email-address" name="email-address" required placeholder="johndoe@gmail.com">
                 <label for="phone-number">Phone Number</label>
+                <input type="text" name="postcode" id="postcode" required pattern="{8,12}" placeholder="04 123 45678">
             </fieldset>
 
             <fieldset class="form-skills">
-                <label for="technical-skills">Required Technical Skills</label>
+                <legend>Relevant Skills</legend>
 
+                <table class="skills-table">
+                    <caption>Required Skills</caption>
+                    
+                    <thead>
+                        <tr>
+                            <th class="skills-table-header">G01-123 : Software Developer</th>
+                            <th class="skills-table-header">G02-123 : Network Administrator</th>
+                            <th class="skills-table-header">G03-123 : Data Analyst</th>
+                            <th class="skills-table-header">G04-123 : Cybersecurity Specialist</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="skills-table-data">
+                                <div class="checklist G01-123">
+                                    <input type="checkbox" id="g01-exp" name="g01-exp" value="5+ years of experience in software development">
+                                    <label for="g01-exp">5+ years of experience in software development</label><br>
+                                
+                                    <input type="checkbox" id="g01-languages" name="g01-languages" value="Proficiency in Java, Python or C#">
+                                    <label for="g01-languages">Proficiency in Java, Python or C#</label><br>
+                                
+                                    <input type="checkbox" id="g01-problem-solving" name="g01-problem-solving" value="Strong problem solving skills">
+                                    <label for="g01-problem-solving">Strong problem solving skills</label>
+                                </div>
+                            </td>
+                            <td class="skills-table-data">
+                                <div class="checklist G02-123">
+                                    <input type="checkbox" id="g02-exp" name="g02-exp" value="3+ years of experience in network administration">
+                                    <label for="g02-exp">3+ years of experience in network administration</label><br>
+                                
+                                    <input type="checkbox" id="g02-protocols" name="g02-protocols" value="Proficiency with networking protocols (TCP/IP, DNS, DHCP)">
+                                    <label for="g02-protocols">Proficiency with networking protocols (TCP/IP, DNS, DHCP)</label><br>
+                                
+                                    <input type="checkbox" id="g02-firewalls" name="g02-firewalls" value="Strong knowledge of firewalls and VPNs">
+                                    <label for="g02-firewalls">Strong knowledge of firewalls and VPNs</label>
+                                </div>
+                            </td>
+                            <td class="skills-table-data">
+                                <div class="checklist G03-123">
+                                    <input type="checkbox" id="g03-exp" name="g03-exp" value="3+ years of experience in data analysis">
+                                    <label for="g03-exp">3+ years of experience in data analysis</label><br>
+                                
+                                    <input type="checkbox" id="g03-tools" name="g03-tools" value="Proficiency with data analysis tools (Excel, SQL, R, Python)">
+                                    <label for="g03-tools">Proficiency with data analysis tools (Excel, SQL, R, Python)</label><br>
+                                
+                                    <input type="checkbox" id="g03-analytical" name="g03-analytical" value="Strong analytical and problem-solving skills">
+                                    <label for="g03-analytical">Strong analytical and problem-solving skills</label>
+                                </div>
+                            </td>
+                            <td class="skills-table-data">
+                                <div class="checklist G04-123">
+                                    <input type="checkbox" id="g04-exp" name="g04-exp" value="5+ years of experience in cybersecurity">
+                                    <label for="g04-exp">5+ years of experience in cybersecurity</label><br>
+                                
+                                    <input type="checkbox" id="g04-security" name="g04-security" value="Proficiency in security technologies (firewalls, IDS/IPS, encryption)">
+                                    <label for="g04-security">Proficiency in security technologies (firewalls, IDS/IPS, encryption)</label><br>
+                                
+                                    <input type="checkbox" id="g04-threats" name="g04-threats" value="Strong knowledge of cybersecurity threats and countermeasures">
+                                    <label for="g04-threats">Strong knowledge of cybersecurity threats and countermeasures</label>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="skills-table-data"><span class="bold">G05-123 : IT Support Technician</span></td>
+                            <td class="skills-table-data"><span class="bold">G06-123 : Cloud Engineer</span></td>
+                            <td class="skills-table-data"><span class="bold">G07-123 : AI/ML Engineer</span></td>
+                        </tr>
+
+                        <tr>
+                            <td class="skills-table-data">
+                                <div class="checklist G05-123">
+                                    <input type="checkbox" id="g05-exp" name="g05-exp" value="2+ years of experience in IT support">
+                                    <label for="g05-exp">2+ years of experience in IT support</label><br>
+                                
+                                    <input type="checkbox" id="g05-os" name="g05-os" value="Proficiency with Windows and Mac OS systems">
+                                    <label for="g05-os">Proficiency with Windows and Mac OS systems</label><br>
+                                
+                                    <input type="checkbox" id="g05-communication" name="g05-communication" value="Good communication and troubleshooting skills">
+                                    <label for="g05-communication">Good communication and troubleshooting skills</label>
+                                </div>
+                            </td>
+                            <td class="skills-table-data">
+                                <div class="checklist G06-123">
+                                    <input type="checkbox" id="g06-exp" name="g06-exp" value="4+ years of experience in cloud engineering">
+                                    <label for="g06-exp">4+ years of experience in cloud engineering</label><br>
+                                
+                                    <input type="checkbox" id="g06-cloud" name="g06-cloud" value="Proficiency with cloud platforms (AWS, Azure, Google Cloud)">
+                                    <label for="g06-cloud">Proficiency with cloud platforms (AWS, Azure, Google Cloud)</label><br>
+                                
+                                    <input type="checkbox" id="g06-containers" name="g06-containers" value="Experience with containerization (Docker, Kubernetes)">
+                                    <label for="g06-containers">Experience with containerization (Docker, Kubernetes)</label>
+                                </div>
+                            </td>
+                            <td class="skills-table-data">
+                                <div class="checklist G07-123">
+                                    <input type="checkbox" id="g07-exp" name="g07-exp" value="5+ years of experience in AI/ML engineering">
+                                    <label for="g07-exp">5+ years of experience in AI/ML engineering</label><br>
+                                
+                                    <input type="checkbox" id="g07-ml" name="g07-ml" value="Proficiency in Python, TensorFlow, PyTorch, and other ML frameworks">
+                                    <label for="g07-ml">Proficiency in Python, TensorFlow, PyTorch, and other ML frameworks</label><br>
+                                
+                                    <input type="checkbox" id="g07-stats" name="g07-stats" value="Strong background in statistics and data analysis">
+                                    <label for="g07-stats">Strong background in statistics and data analysis</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="divider"></div>
+                
                 <label for="other-skills">Other Skills</label>
+                <br>
+                <textarea id="other-skills" name="other-skills"></textarea>
             </fieldset>
 
             <input type="submit" value="Apply">
