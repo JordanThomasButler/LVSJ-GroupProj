@@ -61,7 +61,7 @@
             <fieldset class="form-address">
                 <legend>Address</legend>
                 <label for="street-address">Street Address</label>
-                <input type="text" id="street-address" name="street-address" required pattern="[A-Za-z0-9]{1,40}" placeholder="Your Street Address">
+                <input type="text" id="street-address" name="street-address" required pattern="[A-Za-z0-9 ]{1,40}" placeholder="Your Street Address">
                 <label for="suburb-or-town">Suburb/Town</label>
                 <input type="text" id="suburb-or-town" name="suburb-or-town" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
                 <label for="state">State</label>
@@ -85,7 +85,7 @@
                 <label for="email-address">Email Address</label>
                 <input type="email" id="email-address" name="email-address" required placeholder="johndoe@gmail.com">
                 <label for="phone-number">Phone Number</label>
-                <input type="text" name="postcode" id="postcode" required pattern="{8,12}" placeholder="04 123 45678">
+                <input type="text" name="phone-number" id="phone-number" required pattern="{8,12}" placeholder="04 123 45678">
             </fieldset>
 
             <fieldset class="form-skills">
@@ -213,5 +213,16 @@
             <input type="reset">
         </form>
     </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
+            <nav>
+                 <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
+                 <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
+                 <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">Github Project File</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

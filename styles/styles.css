@@ -311,3 +311,21 @@ span.bold {
     font-weight: bold;
     text-align: center;
 }
+
+div.form-section {
+    width: 80%;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+body.application-page input[type="text"]:invalid,
+body.application-page input[type="email"]:invalid {
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+body.application-page input[type="text"]:valid,
+body.application-page input[type="email"]:valid {
+    border: none;
+    border-bottom: 2px solid green;
+}
