@@ -303,27 +303,31 @@ input::placeholder {
     font-style: italic;
 }
 
+/* Aligns the table so it is centered */
 table.skills-table {
     margin: auto;
     text-align: center;
 }
 
+/* Adds border to table element in application page */
 table.skills-table, th.skills-table-header, td.skills-table-data {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
+/* Using the span element, any text wrapped with <span> will become bold */
 span.bold {
     font-weight: bold;
-    text-align: center;
 }
 
+/* Resizes the form section of the application page and centers it */
 div.form-section {
     width: 80%;
     justify-content: center;
     margin-left: 250px;
 }
 
+/* The styling below is to add a border to the bottom of the text input elements which is red when the validation is invalid and green when it is valid */ 
 body.application-page input[type="text"]:invalid,
 body.application-page input[type="email"]:invalid {
     border: none;
@@ -334,4 +338,10 @@ body.application-page input[type="text"]:valid,
 body.application-page input[type="email"]:valid {
     border: none;
     border-bottom: 2px solid green;
+}
+
+/* Styling for the div container which holds the image on the application page */
+div.application-page-logo img.logo-image {
+    position: relative;
+    left: -40px;
 }
