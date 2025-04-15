@@ -14,6 +14,10 @@ body.application-page {
     box-sizing: border-box;
 }
 
+body.home-page {
+    font-family: Arial, sans-serif;
+}
+
 /*Alters the headers of the thing with "header-content" class*/
 header .header-content {
     max-width: 80%; 
