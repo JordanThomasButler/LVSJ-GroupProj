@@ -77,13 +77,12 @@ header.job-header {
     background-color: #a32b2b;
     color: white;
     padding: 0; /* Remove padding to make the header full width */
-    position: fixed; /* Position the header at the top */
+    position: static; /* Position the header at the top */
     top: 0;
     left: 0;
     width: 100%; /* Make the header take up the full width */
     z-index: 10; /* Ensure it stays on top */
     text-align: center;
-    margin-left: 10%;
 }
 
 /* Removes padding and sets list style of the unordered list to none */
