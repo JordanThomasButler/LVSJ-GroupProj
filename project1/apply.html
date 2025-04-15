@@ -47,7 +47,7 @@
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z -]{3,20}" placeholder="Last Name">
                 <label for="date-of-birth">Date of Birth</label>
-                <input type="date" id="'date" name="date" placeholder="dd/mm/yyyy">
+                <input type="date" id="date-of-birth" name="date" placeholder="dd/mm/yyyy">
             </fieldset>
 
             <fieldset class="form-gender">
@@ -207,9 +207,9 @@
 
                 <div id="divider"></div>
                 
-                <label for="other-skills">Other Skills</label>
+                <label for="other-skills" id="other-skills-lable">Other Skills</label>
                 <br>
-                <textarea class="other-skills" id="other-skills" name="other-skills"></textarea>
+                <textarea class="other-skills" id="other-skills" name="other-skills" aria-labelledby="other-skills-lable"></textarea>
             </fieldset>
 
             <input type="submit" value="Apply">
