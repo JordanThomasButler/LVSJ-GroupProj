@@ -352,17 +352,16 @@ body.application-page input[type="email"]:valid {
 
 /* Background image */
 .content {
+    background-image: url('images/Tech.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    min-height: 750px; /* Ensures full height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 
 /* Title */
