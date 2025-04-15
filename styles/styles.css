@@ -332,6 +332,7 @@ body.application-page input[type="text"]:invalid,
 body.application-page input[type="email"]:invalid {
     border: none;
     border-bottom: 2px solid red;
+    background-color: hsl(0, 0%, 83%, 60%);
 }
 
 body.application-page input[type="text"]:valid,
@@ -423,4 +424,14 @@ body.application-page input[type="email"]:valid {
 
 .jobs-button:hover {
     background-color: #ff6666;
+}
+
+div.application-page-logo .logo-image {
+    position: relative;
+    left: -45px;
+}
+
+textarea.other-skills {
+    width: 600px;
+    height: 100px;
 }

@@ -60,7 +60,7 @@
                 <label for="other">Other</label>
 
             </fieldset>
-
+            
             <fieldset class="form-address">
                 <legend>Address</legend>
                 <label for="street-address">Street Address</label>
@@ -80,7 +80,7 @@
                     <option value="ACT">ACT</option>
                 </select>
                 <label for="postcode">Postcode</label>
-                <input type="text" name="postcode" id="postcode" required pattern="\d{4}" placeholder="0000">
+                <input type="text" name="postcode" id="postcode" required pattern="(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])" placeholder="0000">
             </fieldset>
             
             <fieldset class="form-contact-info">
@@ -209,7 +209,7 @@
                 
                 <label for="other-skills">Other Skills</label>
                 <br>
-                <textarea id="other-skills" name="other-skills"></textarea>
+                <textarea class="other-skills" id="other-skills" name="other-skills"></textarea>
             </fieldset>
 
             <input type="submit" value="Apply">
