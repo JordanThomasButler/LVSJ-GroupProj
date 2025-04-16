@@ -14,6 +14,10 @@ body.application-page {
     box-sizing: border-box;
 }
 
+body.home-page {
+    font-family: Arial, sans-serif;
+}
+
 /*Alters the headers of the thing with "header-content" class*/
 header .header-content {
     max-width: 80%; 
@@ -73,14 +77,123 @@ header.job-header {
     background-color: #a32b2b;
     color: white;
     padding: 0; /* Remove padding to make the header full width */
-    position: fixed; /* Position the header at the top */
+    position: static; /* Position the header at the top */
     top: 0;
     left: 0;
     width: 100%; /* Make the header take up the full width */
     z-index: 10; /* Ensure it stays on top */
     text-align: center;
-    margin-left: 10%;
 }
+
+/* Hidden checkbox */
+.toc-toggle {
+    display: none;
+}
+
+/* Arrow toggle button */
+.toc-toggle-button {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    background-color: #a32b2b;
+    color: white;
+    padding: 10px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3s ease;
+}
+
+/* Slide-in TOC sidebar */
+aside.toc {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 250px;
+    height: auto;
+    background-color: #f9f9f9;
+    border-left: 2px solid #a32b2b;
+    border-top: 2px solid #a32b2b;
+    border-bottom: 2px solid #a32b2b;
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    border-radius: 10px 0 0 10px;
+}
+
+/* When checkbox is checked - show sidebar */
+.toc-toggle:checked + .toc-toggle-button {
+    right: 290px; /* Push arrow left to sit beside the open sidebar */
+    transform: rotate(180deg); /* Flip arrow to point inward */
+    border-radius: 0 5px 5px 0;
+}
+
+/* Move TOC in */
+.toc-toggle:checked + .toc-toggle-button + .toc {
+    transform: translateX(0);
+}
+
+
+aside.toc h3 {
+    margin-top: 0;
+    color: #a32b2b;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+aside.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside.toc ul li {
+    margin: 10px 0;
+}
+
+aside.toc ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside.toc ul li a:hover {
+    text-decoration: underline;
+    color: #a32b2b;
+}
+
+/* Group Photo */
+.group-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Table Styling for member interests */
+table.member-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table.member-table th,
+table.member-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+table.member-table caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
 /* Removes padding and sets list style of the unordered list to none */
 header.job-header nav ul {
@@ -332,6 +445,7 @@ body.application-page input[type="text"]:invalid,
 body.application-page input[type="email"]:invalid {
     border: none;
     border-bottom: 2px solid red;
+    background-color: hsl(0, 0%, 83%, 60%);
 }
 
 body.application-page input[type="text"]:valid,
@@ -339,9 +453,98 @@ body.application-page input[type="email"]:valid {
     border: none;
     border-bottom: 2px solid green;
 }
+/* Logo overlay */
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 200px;
+}
 
-/* Styling for the div container which holds the image on the application page */
-div.application-page-logo img.logo-image {
+.logo img {
+    width: 220px; 
+}
+
+/* Background image */
+.content {
+    background-image: url('images/Tech.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 750px; /* Ensures full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Title */
+.content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle  */
+.content p {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Centered white description box */
+.description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.description p {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Styling for application button */
+.application-form {
+    text-align: center;
+}
+
+.apply-button, .jobs-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.apply-button:hover {
+    background-color: #ff6666;
+}
+
+/* Jobs Availability button styling */
+.jobs-button {
+    background-color: #ff4d4d;
+}
+
+.jobs-button:hover {
+    background-color: #ff6666;
+}
+
+div.application-page-logo .logo-image {
     position: relative;
-    left: -40px;
+    left: -45px;
+}
+
+textarea.other-skills {
+    width: 600px;
+    height: 100px;
 }
