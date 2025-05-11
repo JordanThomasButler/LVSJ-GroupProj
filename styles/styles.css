@@ -548,3 +548,8 @@ textarea.other-skills {
     width: 600px;
     height: 100px;
 }
+
+/* Styling for template page */
+body.template {
+    background-color: #CABA9C
+}
