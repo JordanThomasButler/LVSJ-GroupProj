@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Descriptions</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body class="job-page">
-    <header class="job-header">
-        <div class="header-content">
-            <h1>Job Descriptions</h1>
-        </div>
-    </header>
 
-    <aside class="job-links">
-        <ul>
-            <div class="application-page-logo">
-                <img src = "images/logo.png" class="logo-image" alt="Company Logo">
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </aside>
+<?php 
+$pageTitle = "Job Descriptions";
+$headerTitle = "Job Descriptions";
+$bodyClass = "job-page";
+include 'header.inc'; 
+?>
 
     <main class="job-main-content">
         <section class="job-section-container">
@@ -190,15 +172,8 @@
    
 
 
-<footer class="main-footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
-        <nav>
-             <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
-             <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
-             <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">Github Project File</a>
-        </nav>
-    </div>
-</footer>
+<?php 
+include 'footer.inc'
+?>
 </body>
 </html>

@@ -28,7 +28,7 @@ header .header-content {
 
 /*alters the asides of the things with the "job-links" class */
 aside.job-links {
-    background-color: #a32b2b;
+    background-color: #4C6444;
     color: white;
     width: 100px;
     padding: 20px;
@@ -68,13 +68,13 @@ aside.job-links ul li a {
 
 /*When you hover over the things mentioned above the background is changed and a border is created to show it is hovered over*/
 aside.job-links ul li a:hover {
-    background-color: #ae3a3a;
+    background-color: #5A7855;
     border-radius: 5px;
 }
 
 /* Header for the jobs  */
 header.job-header {
-    background-color: #a32b2b;
+    background-color: #4C6444;
     color: white;
     padding: 0; /* Remove padding to make the header full width */
     position: static; /* Position the header at the top */
@@ -271,7 +271,7 @@ section.job-section .job-header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: #a32b2b;
+    background-color: #4C6444;
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -558,6 +558,7 @@ header.incl {
     background-color: #4C6444;
     width: 100%;
     height: 80px;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -578,15 +579,13 @@ footer.incl {
     background-color: #4C6444;
     color: white;
     width: 100%;
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    height: auto;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    padding: 12px 20px;
-    padding-bottom: 25px;
+    padding: 20px;
+    margin-top: 50px; /* adds spacing between content and footer */
 }
+
 
 footer.incl nav a {
     color: #f0f0f0;
