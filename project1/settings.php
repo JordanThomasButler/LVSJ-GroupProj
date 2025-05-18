@@ -1,6 +1,6 @@
 <?php
-$host = "localhost";          
-$user = "root";               
-$pwd = "";                    
-$sql_db = "jobs_db";     
+    $host = "localhost";          
+    $user = "root";               
+    $pwd = "";                    
+    $sql_db = "lsvj_db";     
 ?>
