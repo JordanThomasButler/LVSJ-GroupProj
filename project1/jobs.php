@@ -4,17 +4,14 @@ $pageTitle = "Job Descriptions";
 $headerTitle = "Job Descriptions";
 $bodyClass = "job-page";
 include 'header.inc'; 
-
-// Connect to DB
+//connect to DB
+$skip_main_db = true;
 require_once("settings.php");
-$conn = mysqli_connect($host, $user, $pwd, $sql_db);
-
-if (!$conn) {
-    die("Database connection failed: " . mysqli_connect_error());
-}
 
 $query = "SELECT * FROM `jobs`";
 $result = mysqli_query($conn, $query);
+$query = "SELECT * FROM jobs";
+$result = mysqli_query($conn_jobs, $query);
 ?>
 <main class="job-main-content">
     <section class="job-section-container">
