@@ -13,7 +13,7 @@ if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM jobs";
+$query = "SELECT * FROM `jobs`";
 $result = mysqli_query($conn, $query);
 ?>
 <main class="job-main-content">

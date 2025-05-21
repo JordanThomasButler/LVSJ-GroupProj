@@ -2,5 +2,5 @@
     $host = "localhost";          
     $user = "root";               
     $pwd = "";                    
-    $sql_db = "lsvj_db";     
+    $sql_db = "lvsj_db";     
 ?>

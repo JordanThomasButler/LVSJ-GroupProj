@@ -382,25 +382,6 @@ footer.main-footer nav a:hover {
     }
 }
 
-/* Header for application page */
-header.apply-header {
-    background-color: #a32b2b;
-    color: white;
-    padding: 0; /* Remove padding to make the header full width */
-    position: static; 
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the header take up the full width */
-    z-index: 10; /* Ensure it stays on top */
-    text-align: center;
-}
-
-div.form-section {
-    margin-top: 20px; /* This stops the form from going 'under' the header element */
-    margin-left: 180px; /* This stops the form from going 'under' the aside element */
-    padding: 20px;
-}
-
 /* This id is used for div elements as it is more aesthetically pleasing and breaks up the page visually */
 #divider {
     width: 100%;
@@ -453,6 +434,7 @@ body.application-page input[type="email"]:valid {
     border: none;
     border-bottom: 2px solid green;
 }
+
 /* Logo overlay */
 .logo {
     position: absolute;
@@ -598,3 +580,20 @@ footer.incl nav a {
 footer.incl nav a:hover {
     text-decoration: underline;
 }
+
+div.form-section {
+    margin-top: 100px; /* Slightly more than 80px to allow spacing */
+    padding: 20px;
+    width: 80%;
+    margin-left: 250px;
+}
+
+body.apply-page {
+    padding-top: 80px;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto;
+} /* Ensures scrolling is allowed */
+

@@ -1,34 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body class="application-page">
     <!-- Header and Menu Section -->
-    <header class="apply-header">
-        <div class="header-content">
-            <h1>Job Application</h1>
-        </div>
-    </header>
-    
-    <aside class="job-links">
-        <ul>
-            <div class="application-page-logo">
-                <img src = "images/logo.png" class="logo-image" alt="Company Logo">
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </aside>
-
-    <!--Container for the form-->
+    <?php
+    $pageTitle = "Application Page";
+    $headerTitle = "Application Page";
+    $bodyClass = "application-page";
+    include 'header.inc'; 
+    ?>
+<div class="application-background">
     <div class="form-section">
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <form action="process_eoi.php" method="post">
             <fieldset class="form-details">
                 <legend>Details</legend>
                 <label for="job-reference-number">Job Reference Number</label>
@@ -38,9 +17,6 @@
                     <option value="Network Administrator">G02-123</option>
                     <option value="Data Analyst">G03-123</option>
                     <option value="Cybersecurity Specialist">G04-123</option>
-                    <option value="IT Support Technician">G05-123</option>
-                    <option value="Cloud Engineer">G06-123</option>
-                    <option value="AI/ML Engineer">G07-123</option>
                 </select>
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}" placeholder="First Name">
@@ -157,51 +133,6 @@
                                 </div>
                             </td>
                         </tr>
-
-                        <tr>
-                            <td class="skills-table-data"><span class="bold">G05-123 : IT Support Technician</span></td>
-                            <td class="skills-table-data"><span class="bold">G06-123 : Cloud Engineer</span></td>
-                            <td class="skills-table-data"><span class="bold">G07-123 : AI/ML Engineer</span></td>
-                        </tr>
-
-                        <tr>
-                            <td class="skills-table-data">
-                                <div class="checklist G05-123">
-                                    <input type="checkbox" id="g05-exp" name="g05-exp" value="2+ years of experience in IT support">
-                                    <label for="g05-exp">2+ years of experience in IT support</label><br>
-                                
-                                    <input type="checkbox" id="g05-os" name="g05-os" value="Proficiency with Windows and Mac OS systems">
-                                    <label for="g05-os">Proficiency with Windows and Mac OS systems</label><br>
-                                
-                                    <input type="checkbox" id="g05-communication" name="g05-communication" value="Good communication and troubleshooting skills">
-                                    <label for="g05-communication">Good communication and troubleshooting skills</label>
-                                </div>
-                            </td>
-                            <td class="skills-table-data">
-                                <div class="checklist G06-123">
-                                    <input type="checkbox" id="g06-exp" name="g06-exp" value="4+ years of experience in cloud engineering">
-                                    <label for="g06-exp">4+ years of experience in cloud engineering</label><br>
-                                
-                                    <input type="checkbox" id="g06-cloud" name="g06-cloud" value="Proficiency with cloud platforms (AWS, Azure, Google Cloud)">
-                                    <label for="g06-cloud">Proficiency with cloud platforms (AWS, Azure, Google Cloud)</label><br>
-                                
-                                    <input type="checkbox" id="g06-containers" name="g06-containers" value="Experience with containerization (Docker, Kubernetes)">
-                                    <label for="g06-containers">Experience with containerization (Docker, Kubernetes)</label>
-                                </div>
-                            </td>
-                            <td class="skills-table-data">
-                                <div class="checklist G07-123">
-                                    <input type="checkbox" id="g07-exp" name="g07-exp" value="5+ years of experience in AI/ML engineering">
-                                    <label for="g07-exp">5+ years of experience in AI/ML engineering</label><br>
-                                
-                                    <input type="checkbox" id="g07-ml" name="g07-ml" value="Proficiency in Python, TensorFlow, PyTorch, and other ML frameworks">
-                                    <label for="g07-ml">Proficiency in Python, TensorFlow, PyTorch, and other ML frameworks</label><br>
-                                
-                                    <input type="checkbox" id="g07-stats" name="g07-stats" value="Strong background in statistics and data analysis">
-                                    <label for="g07-stats">Strong background in statistics and data analysis</label>
-                                </div>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
 
@@ -216,16 +147,8 @@
             <input type="reset">
         </form>
     </div>
+</div>
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
-            <nav>
-                 <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
-                 <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
-                 <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">Github Project File</a>
-            </nav>
-        </div>
-    </footer>
-</body>
-</html>
+    <?php
+    include 'footer.inc';
+    ?>
