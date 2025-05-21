@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Our Group</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-</head>
-<body class="application-page">
-    <!-- Header -->
-    <header class="apply-header">
-        <div class="header-content">
-            <h1>About Our Group</h1>
-        </div>
-    </header>
+<?php
+$pageTitle = "About Our Group";
+$headerTitle = "About Our Group";
+$bodyClass = "application-page";
+include 'header.inc';
 
+?>
+
+<main class="about-main-content">
     <!-- Sidebar -->
     <aside class="job-links">
         <ul>
@@ -63,7 +57,7 @@
             <h2>Liam Healey</h2>
             <ul>
                 <li>Name: Liam Healey</li>
-                <li>Contribution: Jobs Description Page, Jira Setup, Base of the About page</li>
+                <li>Contribution: Jobs Description Page, Jira Setup, Base of the About page (About page update in part 2), Implementation and creation of MySQL Database for jobs page</li>
                 <li>Student ID:105923500</li>
             </ul>    
             
@@ -95,7 +89,7 @@
             <h2>Jordan Thomas-Butler</h2>
             <ul>
                 <li>Name: Jordan Thomas-Butler</li>
-                <li>Contribution: Application page</li>
+                <li>Contribution: Application page, Creation of EOI table, Adding validated records to EOI table</li>
                 <li><strong>Student ID:</strong> 106013677</li>
             </ul>    
             <table class="member-table">
@@ -150,16 +144,8 @@
             </table>
         </section>
     </div>
+</main>
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
-            <nav>
-                <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
-                <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
-                <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">Github Project File</a>
-            </nav>
-        </div>
-    </footer>
+<?php include 'footer.inc'; ?>
 </body>
 </html>

@@ -32,7 +32,7 @@ aside.job-links {
     color: white;
     width: 100px;
     padding: 20px;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     height: 100%;
@@ -396,8 +396,8 @@ header.apply-header {
 }
 
 div.form-section {
-    margin-top: 20px; /* This stops the form from going 'under' the header element */
-    margin-left: 180px; /* This stops the form from going 'under' the aside element */
+    margin-top: 100px; 
+    margin-left: 180px; 
     padding: 20px;
 }
 
@@ -598,3 +598,8 @@ footer.incl nav a {
 footer.incl nav a:hover {
     text-decoration: underline;
 }
+
+body.incl main {
+    padding-top: 100px;
+}
+
