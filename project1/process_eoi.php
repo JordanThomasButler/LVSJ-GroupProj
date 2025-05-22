@@ -32,16 +32,16 @@ if ($job_reference_number == "Software Developer") {
     $skill3 = sanitise($_POST["g01-problem-solving"]);
 } elseif ($job_reference_number == "Network Administrator") {
     $skill1 = sanitise($_POST["g02-exp"]);
-    $skill2 = sanitise($_POST["g02-language"]);
-    $skill3 = sanitise($_POST["g02-problem-solving"]);
+    $skill2 = sanitise($_POST["g02-protocols"]);
+    $skill3 = sanitise($_POST["g02-firewalls"]);
 } elseif ($job_reference_number == "Data Analyst") {
     $skill1 = sanitise($_POST["g03-exp"]);
-    $skill2 = sanitise($_POST["g03-language"]);
-    $skill3 = sanitise($_POST["g03-problem-solving"]);
+    $skill2 = sanitise($_POST["g03-tools"]);
+    $skill3 = sanitise($_POST["g03-analytical"]);
 } elseif ($job_reference_number == "Cybersecurity Analyst") {
     $skill1 = sanitise($_POST["g04-exp"]);
-    $skill2 = sanitise($_POST["g04-language"]);
-    $skill3 = sanitise($_POST["g04-problem-solving"]);
+    $skill2 = sanitise($_POST["g04-security"]);
+    $skill3 = sanitise($_POST["g04-threats"]);
 } else {
     // Optional: handle invalid job reference number
     $errors[] = "Invalid job reference number.";
