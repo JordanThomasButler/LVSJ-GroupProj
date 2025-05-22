@@ -32,7 +32,7 @@ aside.job-links {
     color: white;
     width: 100px;
     padding: 20px;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -589,3 +589,7 @@ html, body {
     height: 100%;
     overflow-y: auto;
 } /* Ensures scrolling is allowed */
+
+aside.job-links {
+    margin: 0px;
+}

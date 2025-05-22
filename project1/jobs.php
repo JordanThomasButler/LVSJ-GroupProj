@@ -4,15 +4,13 @@ $pageTitle = "Job Descriptions";
 $headerTitle = "Job Descriptions";
 $bodyClass = "job-page";
 include 'header.inc'; 
-//connect to DB
-$skip_main_db = true;
 require_once("settings.php");
 
+$conn = mysqli_connect($host, $user, $pwd, $sql_db);
 $query = "SELECT * FROM `jobs`";
 $result = mysqli_query($conn, $query);
-$query = "SELECT * FROM jobs";
-$result = mysqli_query($conn_jobs, $query);
 ?>
+
 <main class="job-main-content">
     <section class="job-section-container">
         <section class="job-row">
