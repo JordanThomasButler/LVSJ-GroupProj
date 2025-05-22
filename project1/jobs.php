@@ -23,6 +23,7 @@ if (mysqli_num_rows($result) > 0) {
         }
 
         $id = strtolower(str_replace(' ', '-', $row['position_title']));
+        //Used chatGPT to help make use of HEREDOC, the original one that was just PHP looked terrible and was hard to read
         echo <<<HTML
             <section class="job-section">
                 <input type="checkbox" id="toggle-$id" class="toggle-box">
