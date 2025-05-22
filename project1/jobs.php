@@ -15,15 +15,18 @@ $result = mysqli_query($conn, $query);
     <section class="job-section-container">
         <section class="job-row">
 <?php
+
+//https://www.w3schools.com/php/func_mysqli_fetch_assoc.asp and https://stackoverflow.com/questions/39267773/understanding-fetch-assoc
 if (mysqli_num_rows($result) > 0) {
     $count = 0;
+    //fetch_assoc used over fetch_row because it uses the row/column names instead of indexed numbers in an index array
     while ($row = mysqli_fetch_assoc($result)) {
         if ($count > 0 && $count % 2 == 0) {
             echo '</section><section class="job-row">';
         }
 
         $id = strtolower(str_replace(' ', '-', $row['position_title']));
-        //Used chatGPT to help make use of HEREDOC, the original one that was just PHP looked terrible and was hard to read
+        //Used chatGPT to help make use of HEREDOC, the original one that was just PHP looked terrible and was hard to read also: https://w3schools.tech/tutorial/php/php_heredoc_and_nowdoc
         echo <<<HTML
             <section class="job-section">
                 <input type="checkbox" id="toggle-$id" class="toggle-box">
