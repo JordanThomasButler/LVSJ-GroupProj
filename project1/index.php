@@ -6,17 +6,12 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Tech Careers Inc.</title>
 </head>
-<body class="home-page">
-    <!-- Sidebar Navigation -->
-    <aside class="job-links">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="jobs.php">Jobs</a></li>
-            <li><a href="apply.php">Apply</a></li>
-            <li><a href="about.php">About Us</a></li>
-        </ul>
-    </aside>
-
+    <?php
+    $pageTitle = "LVSJ | Home Page";
+    $headerTitle = "Home Page";
+    $bodyClass = "home-page";
+    include "header.inc";
+    ?>
     <!-- Main Content Section -->
     <section class="content">
         <div class="logo">
@@ -43,18 +38,9 @@
 
     <hr>
 
-    <!-- Footer Section -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <p>&copy; <?php echo date("Y"); ?> Tech Careers Inc. All rights reserved.</p>
-            <nav>
-                <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
-                <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
-                <a href="https://github.com/JordanThomasButler/LVSJ-GroupProj" target="_blank">GitHub Project File</a>    
-            <p>Contact us at <a href="mailto:info@yourcompany.com.au">info@Techcareers.com.au</a></p>
-            </nav>
-        </div>
-    </footer>
+    <?php
+    include "footer.inc";
+    ?>
 
 </body>
 </html>

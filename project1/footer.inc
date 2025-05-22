@@ -1,5 +1,5 @@
 <footer class="incl">
-    <p>&copy; 2025 Tech Careers Inc. All rights reserved.</p>
+    <p>&copy; <?php echo date("Y"); ?> Tech Careers Inc. All rights reserved.</p>
     <nav>
         <a href="https://id.atlassian.com/invite/p/jira-software?id=vogG_QdzQOGIyAK_Hb6ixg" target="_blank">Jira invite link</a> |
         <a href="https://lsvj.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog" target="_blank">Jira project link</a> |
