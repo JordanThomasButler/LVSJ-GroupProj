@@ -9,9 +9,11 @@ body.job-page {
 /* General Layout for application page*/
 body.application-page {
     font-family: Arial, sans-serif;
+    color: #4A1B0C;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #A6B2A2;
 }
 
 body.home-page {
@@ -545,7 +547,6 @@ header.incl {
     top: 0;
     left: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 50px;
 }
 
 header.incl h1 {
@@ -596,4 +597,46 @@ html, body {
 
 aside.job-links {
     margin: 0px;
+}
+
+div.application-background {
+    margin-top: 50px;
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]) {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #D2D8D0;
+}
+
+select, textarea {
+    border-radius: 6px;
+    background-color: #D2D8D0
+}
+
+textarea {
+    width: 1345px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #4A1B0C;
+}
+
+label.bold-label, .bold-label {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+caption.bold-label {
+    padding: 3px 8px;
+    padding-bottom: 5px;
+}
+
+input[type='radio'] {
+    accent-color: #5C4464;
 }

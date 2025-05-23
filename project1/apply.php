@@ -10,7 +10,7 @@
         <form action="process_eoi.php" method="post">
             <fieldset class="form-details">
                 <legend>Details</legend>
-                <label for="job-reference-number">Job Reference Number</label>
+                <label for="job-reference-number" class="bold-label">Job Reference Number</label>
                 <select id="job-reference-number" name="job-reference-number" required>
                     <option value="">Please Select</option>
                     <option value="Software Developer">G01-123</option>
@@ -18,32 +18,32 @@
                     <option value="Data Analyst">G03-123</option>
                     <option value="Cybersecurity Specialist">G04-123</option>
                 </select>
-                <label for="first-name">First Name</label>
+                <label for="first-name" class="bold-label">First Name</label>
                 <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}" placeholder="First Name">
-                <label for="last-name">Last Name</label>
+                <label for="last-name" class="bold-label">Last Name</label>
                 <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z -]{3,20}" placeholder="Last Name">
-                <label for="date-of-birth">Date of Birth</label>
+                <label for="date-of-birth" class="bold-label">Date of Birth</label>
                 <input type="date" id="date-of-birth" name="date" placeholder="dd/mm/yyyy">
             </fieldset>
 
             <fieldset class="form-gender">
                 <legend>Gender</legend>
                 <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
+                <label for="male" class="bold-label">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label for="female" class="bold-label">Female</label>
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
+                <label for="other" class="bold-label">Other</label>
 
             </fieldset>
             
             <fieldset class="form-address">
                 <legend>Address</legend>
-                <label for="street-address">Street Address</label>
+                <label for="street-address" class="bold-label">Street Address</label>
                 <input type="text" id="street-address" name="street-address" required pattern="[A-Za-z0-9 ]{1,40}" placeholder="Your Street Address">
-                <label for="suburb-or-town">Suburb/Town</label>
+                <label for="suburb-or-town" class="bold-label">Suburb/Town</label>
                 <input type="text" id="suburb-or-town" name="suburb-or-town" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
-                <label for="state">State</label>
+                <label for="state" class="bold-label">State</label>
                 <select id="state" name="state" required>
                     <option value="">Choose Option</option>
                     <option value="VIC">VIC</option>
@@ -55,15 +55,15 @@
                     <option value="TAS">TAS</option>
                     <option value="ACT">ACT</option>
                 </select>
-                <label for="postcode">Postcode</label>
+                <label for="postcode" class="bold-label">Postcode</label>
                 <input type="text" name="postcode" id="postcode" required pattern="(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])" placeholder="0000">
             </fieldset>
             
             <fieldset class="form-contact-info">
                 <legend>Contact Information</legend>
-                <label for="email-address">Email Address</label>
+                <label for="email-address" class="bold-label">Email Address</label>
                 <input type="email" id="email-address" name="email-address" required placeholder="johndoe@gmail.com">
-                <label for="phone-number">Phone Number</label>
+                <label for="phone-number" class="bold-label">Phone Number</label>
                 <input type="text" name="phone-number" id="phone-number" required pattern="{8,12}" placeholder="04 123 45678">
             </fieldset>
 
@@ -71,7 +71,7 @@
                 <legend>Relevant Skills</legend>
 
                 <table class="skills-table">
-                    <caption>Required Skills</caption>
+                    <caption class="bold-label">Required Skills</caption>
                     
                     <thead>
                         <tr>
@@ -138,7 +138,7 @@
 
                 <div id="divider"></div>
                 
-                <label for="other-skills" id="other-skills-lable">Other Skills</label>
+                <label for="other-skills" id="other-skills-lable" class="bold-label">Other Skills</label>
                 <br>
                 <textarea class="other-skills" id="other-skills" name="other-skills" aria-labelledby="other-skills-lable"></textarea>
             </fieldset>
