@@ -4,6 +4,7 @@ body.job-page {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #A6B2A2;
 }
 
 /* General Layout for application page*/
@@ -18,6 +19,7 @@ body.application-page {
 
 body.home-page {
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 /*Alters the headers of the thing with "header-content" class*/
@@ -254,7 +256,7 @@ section.job-row.center-row {
 
 /* Alters the appearance of the entire job section */
 section.job-section {
-    background-color: #f4f4f4;
+    background-color: #BCC5B9;
     padding: 15px;
     border-radius: 8px;
     width: 48%; /* Two sections per row */
@@ -640,3 +642,4 @@ caption.bold-label {
 input[type='radio'] {
     accent-color: #5C4464;
 }
+
