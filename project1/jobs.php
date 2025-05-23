@@ -53,7 +53,7 @@ if (mysqli_num_rows($result) > 0) {
                 </div>
                 <div class="job-form-section">
                     <form action="apply.php" method="post">
-                        <input type="submit" value="Apply for this job" >
+                        <input type="submit" value="Apply for this job" class="apply-button">
                 </div>
             </section>
 HTML;
