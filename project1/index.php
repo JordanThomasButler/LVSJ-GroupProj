@@ -14,8 +14,6 @@
     ?>
     <!-- Main Content Section -->
     <section class="content">
-        <div class="logo">
-            <img src="images/logo.png" alt="Company Logo">
         </div>
         <h1>Join Our Team & Build the Future of Tech</h1>
         <p>Explore exciting career opportunities with us</p> 
