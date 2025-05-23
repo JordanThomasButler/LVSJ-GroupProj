@@ -19,7 +19,7 @@ $result = mysqli_query($conn, $query);
 //https://www.w3schools.com/php/func_mysqli_fetch_assoc.asp and https://stackoverflow.com/questions/39267773/understanding-fetch-assoc
 if (mysqli_num_rows($result) > 0) {
     $count = 0;
-    //fetch_assoc used over fetch_row because it uses the row/column names instead of indexed numbers in an index array
+    //fetch_assoc used over fetch_row because it uses the row/column names instead of indexed numbers in an index array, fetch_row is still usable but I prefer this method.
     while ($row = mysqli_fetch_assoc($result)) {
         if ($count > 0 && $count % 2 == 0) {
             echo '</section><section class="job-row">';
