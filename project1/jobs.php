@@ -51,6 +51,12 @@ if (mysqli_num_rows($result) > 0) {
                     <h4>Preferable:</h4>
                     {$row['preferable_qualifications']}
                 </div>
+                <div class="job-form-section">
+                    <form action="apply.php" method="get">
+                        <input type="hidden" name="ref" value="{$row['position_reference']}">
+                        <input type="submit" value="Apply for this job" class="apply-button">
+                    </form>
+                </div>
             </section>
 HTML;
         $count++;
