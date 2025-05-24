@@ -452,7 +452,7 @@ body.application-page input[type="email"]:valid {
 
 /* Background image */
 .content {
-    background-image: url('images/Tech.jpg');
+    background-image: url('images/tech.png');
     background-size: cover;
     background-position: center;
     min-height: 750px; /* Ensures full height */
