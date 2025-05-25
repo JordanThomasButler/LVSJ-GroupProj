@@ -107,7 +107,7 @@ include 'header.inc';
             <h2>Virak Meng</h2>
             <ul>
                 <li>Name: Virak Meng</li>
-                <li>Contribution: Homepage</li>
+                <li>Contribution: Homepage, Management page</li>
                 <li>Student ID: 105058033</li>
             </ul>    
             <table class="member-table">

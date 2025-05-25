@@ -90,7 +90,7 @@ header.job-header {
     position: fixed;
     top: 150px;
     right: 0;
-    background-color: #a32b2b;
+    background-color: #4C6444;
     color: white;
     padding: 10px 12px;
     font-size: 20px;
@@ -108,9 +108,9 @@ aside.toc {
     width: 250px;
     height: auto;
     background-color: #f9f9f9;
-    border-left: 2px solid #a32b2b;
-    border-top: 2px solid #a32b2b;
-    border-bottom: 2px solid #a32b2b;
+    border-left: 2px solid #4C6444;
+    border-top: 2px solid #4C6444;
+    border-bottom: 2px solid #4C6444;
     padding: 20px;
     box-shadow: -2px 0 8px rgba(0,0,0,0.2);
     transform: translateX(100%);
@@ -134,7 +134,7 @@ aside.toc {
 
 aside.toc h3 {
     margin-top: 0;
-    color: #a32b2b;
+    color: #4C6444;
     font-size: 1.2em;
     text-align: center;
 }
@@ -632,6 +632,22 @@ caption.bold-label {
 
 input[type='radio'] {
     accent-color: #5C4464;
+}
+
+.apply-button {
+    background-color: #4C6444;
+    margin-left: 140px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #3a4d33;
 }
 
 .nav-link {
