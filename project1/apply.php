@@ -7,11 +7,11 @@
     ?>
 <div class="application-background">
     <div class="form-section">
-        <form action="process_eoi.php" method="post">
+        <form action="process_eoi.php" method="post" autocomplete="off">
             <fieldset class="form-details">
                 <legend>Details</legend>
                 <label for="job-reference-number" class="bold-label">Job Reference Number</label>
-                <select id="job-reference-number" name="job-reference-number" required>
+                <select id="job-reference-number" name="job-reference-number" class="cursor-pointer" required>
                     <option value="">Please Select</option>
                     <option value="Software Developer">G01-123</option>
                     <option value="Network Administrator">G02-123</option>
@@ -19,32 +19,32 @@
                     <option value="Cybersecurity Specialist">G04-123</option>
                 </select>
                 <label for="first-name" class="bold-label">First Name</label>
-                <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]{3,20}" placeholder="First Name">
+                <input type="text" id="first-name" name="first-name" class="input-focus" required pattern="[A-Za-z]{3,20}" placeholder="First Name">
                 <label for="last-name" class="bold-label">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z -]{3,20}" placeholder="Last Name">
+                <input type="text" id="last-name" name="last-name" class="input-focus" required pattern="[A-Za-z -]{3,20}" placeholder="Last Name">
                 <label for="date-of-birth" class="bold-label">Date of Birth</label>
                 <input type="date" id="date-of-birth" name="date" placeholder="dd/mm/yyyy">
             </fieldset>
 
             <fieldset class="form-gender">
                 <legend>Gender</legend>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male" class="bold-label">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female" class="bold-label">Female</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other" class="bold-label">Other</label>
+                <input type="radio" id="male" name="gender" value="male" class="input-focus" required>
+                <label for="male" class="bold-label cursor-pointer">Male</label>
+                <input type="radio" id="female" name="gender" value="female"class="input-focus" >
+                <label for="female" class="bold-label cursor-pointer">Female</label>
+                <input type="radio" id="other" name="gender" value="other"class="input-focus" >
+                <label for="other" class="bold-label cursor-pointer">Other</label>
 
             </fieldset>
             
             <fieldset class="form-address">
                 <legend>Address</legend>
                 <label for="street-address" class="bold-label">Street Address</label>
-                <input type="text" id="street-address" name="street-address" required pattern="[A-Za-z0-9 ]{1,40}" placeholder="Your Street Address">
+                <input type="text" id="street-address" name="street-address" class="input-focus" required pattern="[A-Za-z0-9 ]{1,40}" placeholder="Your Street Address">
                 <label for="suburb-or-town" class="bold-label">Suburb/Town</label>
-                <input type="text" id="suburb-or-town" name="suburb-or-town" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
+                <input type="text" id="suburb-or-town" name="suburb-or-town" class="input-focus" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
                 <label for="state" class="bold-label">State</label>
-                <select id="state" name="state" required>
+                <select id="state" name="state" class="cursor-pointer" required>
                     <option value="">Choose Option</option>
                     <option value="VIC">VIC</option>
                     <option value="NSW">NSW</option>
@@ -56,15 +56,15 @@
                     <option value="ACT">ACT</option>
                 </select>
                 <label for="postcode" class="bold-label">Postcode</label>
-                <input type="text" name="postcode" id="postcode" required pattern="(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])" placeholder="0000">
+                <input type="text" name="postcode" id="postcode" class="input-focus" required pattern="(0[2-9][0-9]{2}|[1-8][0-9]{3}|9[0-8][0-9]{2}|99[0-3][0-9]|994[0-4])" placeholder="0000">
             </fieldset>
             
             <fieldset class="form-contact-info">
                 <legend>Contact Information</legend>
                 <label for="email-address" class="bold-label">Email Address</label>
-                <input type="email" id="email-address" name="email-address" required placeholder="johndoe@gmail.com">
+                <input type="email" id="email-address" name="email-address" class="input-focus" required placeholder="johndoe@gmail.com">
                 <label for="phone-number" class="bold-label">Phone Number</label>
-                <input type="text" name="phone-number" id="phone-number" required pattern="{8,12}" placeholder="04 123 45678">
+                <input type="text" name="phone-number" id="phone-number" class="input-focus" required pattern="\d{8,12}" placeholder="04 123 45678">
             </fieldset>
 
             <fieldset class="form-skills">

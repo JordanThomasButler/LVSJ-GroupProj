@@ -524,6 +524,7 @@ div.application-page-logo .logo-image {
 textarea.other-skills {
     width: 600px;
     height: 100px;
+    padding: 5px;
 }
 
 /* Styling for template page */
@@ -561,7 +562,7 @@ footer.incl {
     text-align: center;
     padding: 20px;
     margin-top: 50px; /* adds spacing between content and footer */
-    position: relative;
+    position: relative !important;
     bottom: 0;
 }
 
@@ -607,12 +608,16 @@ select, textarea {
     background-color: #D2D8D0
 }
 
+input[type="submit"],input[type="reset"] {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 textarea {
     width: 1345px;
     height: 100px;
     resize: none;
     box-sizing: border-box;
-
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -628,6 +633,7 @@ label.bold-label, .bold-label {
 caption.bold-label {
     padding: 3px 8px;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type='radio'] {
@@ -681,6 +687,23 @@ input[type='radio'] {
 }
 
 .application-page-button:hover {
-    background-color: #4C6444; /* Green */
+    background-color: #5C4464; /* Purple */
     color: white;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+input[name="gender"],label.cursor-pointer {
+    cursor: pointer;
+}
+
+.input-focus:focus {
+    outline: 0.15rem solid #5C4464;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    padding: 15px 5px ;
 }
