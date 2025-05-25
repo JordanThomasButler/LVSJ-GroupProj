@@ -66,15 +66,9 @@ aside.job-links ul li a {
     font-size: 18px;
     text-decoration: none;
     display: block;
-    padding: 8px 0;
-    transition: background-color 0.3s;
+    padding: 8px 0; 
 }
 
-/*When you hover over the things mentioned above the background is changed and a border is created to show it is hovered over*/
-aside.job-links ul li a:hover {
-    background-color: #5A7855;
-    border-radius: 5px;
-}
 
 /* Header for the jobs  */
 header.job-header {
@@ -708,4 +702,53 @@ input[type='radio'] {
     accent-color: #5C4464;
 }
 
+.apply-button {
+    background-color: #4C6444;
+    margin-left: 140px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.apply-button:hover {
+    background-color: #3a4d33;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #5C4464 0%, #5C4464 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.application-page-button {
+    transition-duration: 0.4s;
+    width: 70px;
+    padding: 2px 1px;
+    margin: 5px;
+}
+
+.application-page-button:hover {
+    background-color: #4C6444; /* Green */
+    color: white;
+}

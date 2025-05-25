@@ -69,72 +69,90 @@
 
             <fieldset class="form-skills">
                 <legend>Relevant Skills</legend>
+                <div class="required-skills-list">
+                    <?php
+                    require_once 'settings.php';
+                    $conn = mysqli_connect($host, $user, $pwd, $sql_db);
+                    if (!$conn) {
+                        die("Connection failed: " . mysqli_connect_error());
+                    }
 
-                <table class="skills-table">
-                    <caption class="bold-label">Required Skills</caption>
+                    $selected_reference = isset($_GET['job-reference-number']) ? $_GET['job-reference-number'] : '';
+                    ?>
                     
-                    <thead>
-                        <tr>
-                            <th class="skills-table-header">G01-123 : Software Developer</th>
-                            <th class="skills-table-header">G02-123 : Network Administrator</th>
-                            <th class="skills-table-header">G03-123 : Data Analyst</th>
-                            <th class="skills-table-header">G04-123 : Cybersecurity Specialist</th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        <tr>
-                            <td class="skills-table-data">
-                                <div class="checklist G01-123">
+                    <?php if ($selected_reference === "Software Developer"): ?>
+                        <div class="required-skills-checklist">
+                            <ul>
+                                <li>
                                     <input type="checkbox" id="g01-exp" name="g01-exp" value="5+ years of experience in software development">
-                                    <label for="g01-exp">5+ years of experience in software development</label><br>
-                                
+                                    <label for="g01-exp">5+ years of experience in software development</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g01-languages" name="g01-languages" value="Proficiency in Java, Python or C#">
-                                    <label for="g01-languages">Proficiency in Java, Python or C#</label><br>
-                                
+                                    <label for="g01-languages">Proficiency in Java, Python or C#</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g01-problem-solving" name="g01-problem-solving" value="Strong problem solving skills">
                                     <label for="g01-problem-solving">Strong problem solving skills</label>
-                                </div>
-                            </td>
-                            <td class="skills-table-data">
-                                <div class="checklist G02-123">
+                                </li>
+                            </ul>
+                        </div>
+                    <?php elseif ($selected_reference === "Network Administrator"): ?>
+                        <div class="required-skills-checklist">
+                            <ul>
+                                <li>
                                     <input type="checkbox" id="g02-exp" name="g02-exp" value="3+ years of experience in network administration">
-                                    <label for="g02-exp">3+ years of experience in network administration</label><br>
-                                
+                                    <label for="g02-exp">3+ years of experience in network administration</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g02-protocols" name="g02-protocols" value="Proficiency with networking protocols (TCP/IP, DNS, DHCP)">
-                                    <label for="g02-protocols">Proficiency with networking protocols (TCP/IP, DNS, DHCP)</label><br>
-                                
+                                    <label for="g02-protocols">Proficiency with networking protocols (TCP/IP, DNS, DHCP)</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g02-firewalls" name="g02-firewalls" value="Strong knowledge of firewalls and VPNs">
                                     <label for="g02-firewalls">Strong knowledge of firewalls and VPNs</label>
-                                </div>
-                            </td>
-                            <td class="skills-table-data">
-                                <div class="checklist G03-123">
+                                </li>
+                            </ul>
+                        </div>
+                    <?php elseif ($selected_reference === "Data Analyst"): ?>
+                        <div class="required-skills-checklist">
+                            <ul>
+                                <li>
                                     <input type="checkbox" id="g03-exp" name="g03-exp" value="3+ years of experience in data analysis">
-                                    <label for="g03-exp">3+ years of experience in data analysis</label><br>
-                                
+                                    <label for="g03-exp">3+ years of experience in data analysis</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g03-tools" name="g03-tools" value="Proficiency with data analysis tools (Excel, SQL, R, Python)">
-                                    <label for="g03-tools">Proficiency with data analysis tools (Excel, SQL, R, Python)</label><br>
-                                
+                                    <label for="g03-tools">Proficiency with data analysis tools (Excel, SQL, R, Python)</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g03-analytical" name="g03-analytical" value="Strong analytical and problem-solving skills">
                                     <label for="g03-analytical">Strong analytical and problem-solving skills</label>
-                                </div>
-                            </td>
-                            <td class="skills-table-data">
-                                <div class="checklist G04-123">
+                                </li>
+                            </ul>
+                        </div>
+                    <?php elseif ($selected_reference === "Cybersecurity Specialist"): ?>
+                        <div class="required-skills-checklist">
+                            <ul>
+                                <li>
                                     <input type="checkbox" id="g04-exp" name="g04-exp" value="5+ years of experience in cybersecurity">
-                                    <label for="g04-exp">5+ years of experience in cybersecurity</label><br>
-                                
+                                    <label for="g04-exp">5+ years of experience in cybersecurity</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g04-security" name="g04-security" value="Proficiency in security technologies (firewalls, IDS/IPS, encryption)">
-                                    <label for="g04-security">Proficiency in security technologies (firewalls, IDS/IPS, encryption)</label><br>
-                                
+                                    <label for="g04-security">Proficiency in security technologies (firewalls, IDS/IPS, encryption)</label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="g04-threats" name="g04-threats" value="Strong knowledge of cybersecurity threats and countermeasures">
                                     <label for="g04-threats">Strong knowledge of cybersecurity threats and countermeasures</label>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </li>
+                            </ul>
+                        </div>
+                    <?php else: ?>
+                        <h1>Please select a Job Position</h1>
+                    <?php endif; ?>
+                </div>
 
                 <div id="divider"></div>
                 
@@ -143,12 +161,12 @@
                 <textarea class="other-skills" id="other-skills" name="other-skills" aria-labelledby="other-skills-lable"></textarea>
             </fieldset>
 
-            <input type="submit" value="Apply">
-            <input type="reset">
+            <input type="submit" value="Apply" class="application-page-button">
+            <input type="reset" class="application-page-button">
         </form>
     </div>
 </div>
 
-    <?php
-    include 'footer.inc';
-    ?>
+<?php
+include 'footer.inc';
+?>
