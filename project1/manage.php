@@ -2,6 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+$pageTitle = "Management Page";
+$headerTitle = "Management";
+$bodyClass = "management-page";
+include "header.inc";
 session_start();
 include "settings.php"; 
 
@@ -37,7 +41,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'reset' && isset($_GET['id'])) 
     exit();
 }
 
-
 // --- Fetch All EOIs ---
 $query = "SELECT EOInumber, job_reference_number, first_name, last_name, email_address, status FROM eoi";
 $result = mysqli_query($conn, $query);
@@ -60,7 +63,7 @@ $result = mysqli_query($conn, $query);
             <th>Actions</th>
         </tr>
         <?php
-        if (mysqli_num_rows($result) > 0) {
+        if ($result && mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
                 echo "<td>" . $row['EOInumber'] . "</td>";
@@ -69,10 +72,10 @@ $result = mysqli_query($conn, $query);
                 echo "<td>" . $row['email_address'] . "</td>";
                 echo "<td>" . ($row['status'] == 1 ? 'Checked' : 'New') . "</td>";
                 echo "<td>
-                    <a href='manage.php?action=mark_current&id=" . $row['EOInumber'] . "'>Mark Current</a> |
-                    <a href='manage.php?action=reset&id=" . $row['EOInumber'] . "'>Reset</a> |
-                    <a href='manage.php?action=delete&id=" . $row['EOInumber'] . "'>Delete</a>
-                </td>";
+                        <a href='manage.php?action=mark_current&id=" . $row['EOInumber'] . "'>Mark Current</a> |
+                        <a href='manage.php?action=reset&id=" . $row['EOInumber'] . "'>Reset</a> |
+                        <a href='manage.php?action=delete&id=" . $row['EOInumber'] . "'>Delete</a>
+                    </td>";
                 echo "</tr>";
             }
         } else {
@@ -80,5 +83,7 @@ $result = mysqli_query($conn, $query);
         }
         ?>
     </table>
+
+    <?php include "footer.inc"; ?>
 </body>
 </html>

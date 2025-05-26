@@ -14,8 +14,6 @@ $bodyClass = "home-page";
 include "header.inc";
 ?>
 
-<body class="<?php echo $bodyClass; ?>">
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -46,11 +44,10 @@ include "header.inc";
             <li>Software Developer</li>
             <li>Network Administrator</li>
             <li>Data Analyst</li>
+            <li>Cybersecurity Specialist</li>
         </ul>
     </div>
     <a href="jobs.php" class="button">View All Jobs</a>
 </section>
 
-    <?php include "footer.inc"; ?>
-</body>
-</html>
+<?php include "footer.inc"; ?>

@@ -60,15 +60,12 @@ aside.job-links ul li {
     margin-bottom: 15px;
 }
 
-/*Alters things with the a tag (hyperlink), here it means the text you see on the side*/
 aside.job-links ul li a {
-    color: white;
+    padding: 2px;
     font-size: 18px;
     text-decoration: none;
     display: block;
-    padding: 8px 0; 
-}
-
+}   
 
 /* Header for the jobs  */
 header.job-header {
@@ -93,7 +90,7 @@ header.job-header {
     position: fixed;
     top: 150px;
     right: 0;
-    background-color: #a32b2b;
+    background-color: #4C6444;
     color: white;
     padding: 10px 12px;
     font-size: 20px;
@@ -111,9 +108,9 @@ aside.toc {
     width: 250px;
     height: auto;
     background-color: #f9f9f9;
-    border-left: 2px solid #a32b2b;
-    border-top: 2px solid #a32b2b;
-    border-bottom: 2px solid #a32b2b;
+    border-left: 2px solid #4C6444;
+    border-top: 2px solid #4C6444;
+    border-bottom: 2px solid #4C6444;
     padding: 20px;
     box-shadow: -2px 0 8px rgba(0,0,0,0.2);
     transform: translateX(100%);
@@ -137,7 +134,7 @@ aside.toc {
 
 aside.toc h3 {
     margin-top: 0;
-    color: #a32b2b;
+    color: #4C6444;
     font-size: 1.2em;
     text-align: center;
 }
@@ -363,6 +360,7 @@ footer.main-footer nav a:hover {
     text-decoration: underline;
 }
 
+
 /* Size alteration/limiting */
 @media (max-width: 800px) {
     
@@ -438,17 +436,277 @@ body.application-page input[type="email"]:valid {
     top: 35px;
     left: 200px;
 }
+
 .logo img {
     width: 220px; 
 }
 
-/* Home Page Layout */
-body.home-page {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #BCC5B9;
+/* Background image */
+.content {
+    background-image: url('images/Tech.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 750px; /* Ensures full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
 }
+
+/* Title */
+.content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Subtitle  */
+.content p {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Centered white description box */
+.description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.description p {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Styling for application button */
+.application-form {
+    text-align: center;
+}
+
+.apply-button, .jobs-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.apply-button:hover {
+    background-color: #ff6666;
+}
+
+/* Jobs Availability button styling */
+.jobs-button {
+    background-color: #ff4d4d;
+}
+
+.jobs-button:hover {
+    background-color: #ff6666;
+}
+
+div.application-page-logo .logo-image {
+    position: relative;
+    left: -5px;
+}
+
+textarea.other-skills {
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+}
+
+/* Styling for template page */
+body.incl {
+    background-color: #CABA9C;
+}
+
+header.incl {
+    background-color: #4C6444;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    position: block;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.incl h1 {
+    margin: 0 auto;
+    color: #341309;
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+    left: 25px;
+    font-size: 35px;
+}
+
+footer.incl {
+    background-color: #4C6444;
+    color: white;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* adds spacing between content and footer */
+    position: relative !important;
+    bottom: 0;
+}
+
+
+footer.incl nav a {
+    color: #f0f0f0;
+    margin: 0 10px;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer.incl nav a:hover {
+    text-decoration: underline;
+}
+
+body.apply-page {
+    padding-top: 80px;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+} /* Ensures scrolling is allowed */
+
+aside.job-links {
+    margin: 0px;
+}
+
+div.application-background {
+    margin-top: 50px;
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]) {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #D2D8D0;
+}
+
+select, textarea {
+    border-radius: 6px;
+    background-color: #D2D8D0
+}
+
+input[type="submit"],input[type="reset"] {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 1345px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #4A1B0C;
+}
+
+label.bold-label, .bold-label {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+caption.bold-label {
+    padding: 3px 8px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type='radio'] {
+    accent-color: #5C4464;
+}
+
+.apply-button {
+    background-color: #4C6444;
+    margin-left: 140px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #3a4d33;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit; /* Or your preferred text color */
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on spacing preference */
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #5C4464 0%, #5C4464 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.application-page-button {
+    transition-duration: 0.4s;
+    width: 70px;
+    padding: 2px 1px;
+    margin: 5px;
+}
+
+.application-page-button:hover {
+    background-color: #5C4464; /* Purple */
+    color: white;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+input[name="gender"],label.cursor-pointer {
+    cursor: pointer;
+}
+
+.input-focus:focus {
+    outline: 0.15rem solid #5C4464;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    padding: 1.3rem;
+}   
 
 /* Hero Section */
 .hero {
@@ -464,6 +722,7 @@ body.home-page {
     padding: 40px;
 }
 
+/* Hero content */
 .hero-content {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 100px 60px;
@@ -495,6 +754,12 @@ body.home-page {
 .button:hover {
     background-color: #6a8b5e;
     color: #D2D8D0;
+}
+
+body.home-page {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #BCC5B9;
 }
 
 /* Sections: About & Featured Jobs */
@@ -556,199 +821,28 @@ body.home-page {
     margin-bottom: 10px;
 }
 
+.required-skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 24px; /* Adjust spacing between items */
+  padding: 16px; /* Optional padding */
+}
 
-/* Styling for application button */
-.application-form {
+body.management-page {
+    background-color: #A6B2A2;
+}
+
+.management-page table {
     text-align: center;
-}
-
-.apply-button, .jobs-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.apply-button:hover {
-    background-color: #ff6666;
-}
-
-/* Jobs Availability button styling */
-.jobs-button {
-    background-color: #ff4d4d;
-}
-
-.jobs-button:hover {
-    background-color: #ff6666;
-}
-
-div.application-page-logo .logo-image {
-    position: relative;
-    left: -45px;
-}
-
-textarea.other-skills {
-    width: 600px;
-    height: 100px;
-}
-
-/* Styling for template page */
-body.incl {
-    background-color: #CABA9C;
-}
-
-header.incl {
-    background-color: #4C6444;
-    width: 100%;
-    height: 80px;
-    z-index: 10;
-    position: block;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-header.incl h1 {
     margin: 0 auto;
-    color: #4D2D18;
+    padding: 1.2rem;
+    flex: 1;
+}
+
+.management-page h2 {
     text-align: center;
-    padding-top: 15px;
-    position: relative;
-    left: 25px;
-    font-size: 35px;
 }
 
-footer.incl {
-    background-color: #4C6444;
-    color: white;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px; /* adds spacing between content and footer */
-    position: relative;
-    bottom: 0;
-}
-
-footer.incl nav a {
-    color: #f0f0f0;
-    margin: 0 10px;
-    font-size: medium;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-footer.incl nav a:hover {
-    text-decoration: underline;
-}
-
-body.apply-page {
-    padding-top: 80px;
-}
-
-html, body {
+.management-page {
     height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-} /* Ensures scrolling is allowed */
-
-aside.job-links {
-    margin: 0px;
-}
-
-div.application-background {
-    margin-top: 50px;
-}
-
-input:not([type="button"]):not([type="submit"]):not([type="reset"]) {
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #D2D8D0;
-}
-
-select, textarea {
-    border-radius: 6px;
-    background-color: #D2D8D0
-}
-
-textarea {
-    width: 1345px;
-    height: 100px;
-    resize: none;
-    box-sizing: border-box;
-
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    color: #4A1B0C;
-}
-
-label.bold-label, .bold-label {
-    font-weight: bold;
-    padding: 0 8px;
-}
-
-caption.bold-label {
-    padding: 3px 8px;
-    padding-bottom: 5px;
-}
-
-input[type='radio'] {
-    accent-color: #5C4464;
-}
-
-.apply-button {
-    background-color: #4C6444;
-    margin-left: 140px;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.apply-button:hover {
-    background-color: #3a4d33;
-}
-
-.nav-link {
-    position: relative;
-    text-decoration: none;
-    color: inherit; 
-}
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; 
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #5C4464 0%, #5C4464 100%);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease-out;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-.application-page-button {
-    transition-duration: 0.4s;
-    width: 70px;
-    padding: 2px 1px;
-    margin: 5px;
-}
-
-.application-page-button:hover {
-    background-color: #4C6444; /* Green */
-    color: white;
 }
