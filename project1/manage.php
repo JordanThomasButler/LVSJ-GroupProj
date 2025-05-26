@@ -51,7 +51,7 @@ $result = mysqli_query($conn, $query);
 <head>
     <title>Manage EOIs</title>
 </head>
-<body>
+<body class="management-page">
     <h1 class="center-text">All Expressions of Interest</h1>
     <table border="1">
         <tr>
