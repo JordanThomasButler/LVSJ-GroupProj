@@ -52,7 +52,7 @@ $result = mysqli_query($conn, $query);
     <title>Manage EOIs</title>
 </head>
 <body>
-    <h1>All Expressions of Interest</h1>
+    <h1 class="center-text">All Expressions of Interest</h1>
     <table border="1">
         <tr>
             <th>EOInumber</th>

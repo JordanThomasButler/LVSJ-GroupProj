@@ -846,3 +846,7 @@ body.management-page {
 .management-page {
     height: 100%;
 }
+
+.center-text {
+    text-align: center;
+}
