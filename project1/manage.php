@@ -1,4 +1,8 @@
 <?php
+$pageTitle = "Management Page";
+$headerTitle = "Management";
+$bodyClass = "management-page";
+include "header.inc";
 session_start();
 require_once 'settings.php'; 
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
@@ -6,6 +10,7 @@ $conn = mysqli_connect($host, $user, $pwd, $sql_db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+
 ?>
 <h2>All Expressions of Interest</h2>
 
@@ -42,4 +47,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "No EOIs found.";
 }
+
+include "footer.inc";
 ?>
