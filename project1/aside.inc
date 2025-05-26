@@ -1,8 +1,8 @@
 <aside class="job-links">
+    <div class="application-page-logo">
+        <img src="images/logo.png" class="logo-image" alt="Company Logo">
+    </div>
     <ul>
-        <div class="application-page-logo">
-            <img src="images/logo.png" class="logo-image" alt="Company Logo">
-        </div>
         <li><a href="index.php" class="nav-link">Home</a></li>
         <li><a href="jobs.php" class="nav-link">Jobs</a></li>
         <li><a href="apply.php" class="nav-link">Apply</a></li>
