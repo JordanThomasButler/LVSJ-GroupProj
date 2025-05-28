@@ -42,7 +42,7 @@
                 <label for="street-address" class="bold-label">Street Address</label>
                 <input type="text" id="street-address" name="street-address" class="input-focus" required pattern="[A-Za-z0-9 ]{1,40}" placeholder="Your Street Address">
                 <label for="suburb-or-town" class="bold-label">Suburb/Town</label>
-                <input type="text" id="suburb-or-town" name="suburb-or-town" class="input-focus" required pattern="[A-Za-z]{1,40}" placeholder="Suburb or Town">
+                <input type="text" id="suburb-or-town" name="suburb-or-town" class="input-focus" required pattern="[A-Za-z ]{1,40}" placeholder="Suburb or Town">
                 <label for="state" class="bold-label">State</label>
                 <select id="state" name="state" class="cursor-pointer" required>
                     <option value="">Choose Option</option>
@@ -74,15 +74,15 @@
                         <h1 class="skills-checklist-header">Software Developer</h1>
                         <ul>
                             <li>
-                                <input type="checkbox" id="g01-exp" name="g01-exp" value="5+ years of experience in software development">
+                                <input type="checkbox" id="g01-exp" name="g01-exp" value="1">
                                 <label for="g01-exp">5+ years of experience in software development</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g01-languages" name="g01-languages" value="Proficiency in Java, Python or C#">
+                                <input type="checkbox" id="g01-languages" name="g01-languages" value="1">
                                 <label for="g01-languages">Proficiency in Java, Python or C#</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g01-problem-solving" name="g01-problem-solving" value="Strong problem solving skills">
+                                <input type="checkbox" id="g01-problem-solving" name="g01-problem-solving" value="1">
                                 <label for="g01-problem-solving">Strong problem solving skills</label>
                             </li>
                         </ul>
@@ -91,15 +91,15 @@
                         <h1 class="skills-checklist-header">Network Administrator</h1>
                         <ul>
                             <li>
-                                <input type="checkbox" id="g02-exp" name="g02-exp" value="3+ years of experience in network administration">
+                                <input type="checkbox" id="g02-exp" name="g02-exp" value="1">
                                 <label for="g02-exp">3+ years of experience in network administration</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g02-protocols" name="g02-protocols" value="Proficiency with networking protocols (TCP/IP, DNS, DHCP)">
+                                <input type="checkbox" id="g02-protocols" name="g02-protocols" value="1">
                                 <label for="g02-protocols">Proficiency with networking protocols (TCP/IP, DNS, DHCP)</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g02-firewalls" name="g02-firewalls" value="Strong knowledge of firewalls and VPNs">
+                                <input type="checkbox" id="g02-firewalls" name="g02-firewalls" value="1">
                                 <label for="g02-firewalls">Strong knowledge of firewalls and VPNs</label>
                             </li>
                         </ul>
@@ -108,15 +108,15 @@
                         <h1 class="skills-checklist-header">Data Analyst</h1>
                         <ul>
                             <li>
-                                <input type="checkbox" id="g03-exp" name="g03-exp" value="3+ years of experience in data analysis">
+                                <input type="checkbox" id="g03-exp" name="g03-exp" value="1">
                                 <label for="g03-exp">3+ years of experience in data analysis</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g03-tools" name="g03-tools" value="Proficiency with data analysis tools (Excel, SQL, R, Python)">
+                                <input type="checkbox" id="g03-tools" name="g03-tools" value="1">
                                 <label for="g03-tools">Proficiency with data analysis tools (Excel, SQL, R, Python)</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g03-analytical" name="g03-analytical" value="Strong analytical and problem-solving skills">
+                                <input type="checkbox" id="g03-analytical" name="g03-analytical" value="1">
                                 <label for="g03-analytical">Strong analytical and problem-solving skills</label>
                             </li>
                         </ul>
@@ -125,15 +125,15 @@
                         <h1 class="skills-checklist-header">Cybersecurity Specialist</h1>
                         <ul>
                             <li>
-                                <input type="checkbox" id="g04-exp" name="g04-exp" value="5+ years of experience in cybersecurity">
+                                <input type="checkbox" id="g04-exp" name="g04-exp" value="1">
                                 <label for="g04-exp">5+ years of experience in cybersecurity</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g04-security" name="g04-security" value="Proficiency in security technologies (firewalls, IDS/IPS, encryption)">
+                                <input type="checkbox" id="g04-security" name="g04-security" value="1">
                                 <label for="g04-security">Proficiency in security technologies (firewalls, IDS/IPS, encryption)</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="g04-threats" name="g04-threats" value="Strong knowledge of cybersecurity threats and countermeasures">
+                                <input type="checkbox" id="g04-threats" name="g04-threats" value="1">
                                 <label for="g04-threats">Strong knowledge of cybersecurity threats and countermeasures</label>
                             </li>
                         </ul>

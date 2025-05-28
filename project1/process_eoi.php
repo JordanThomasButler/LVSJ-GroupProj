@@ -26,19 +26,19 @@ $phone_number = sanitise($_POST["phone-number"]);
 
 $skill1 = $skill2 = $skill3 = "";
 
-if ($job_reference_number == "Software Developer") {
+if ($job_reference_number == "G01-123") {
     $skill1 = sanitise($_POST["g01-exp"]);
     $skill2 = sanitise($_POST["g01-languages"]);
     $skill3 = sanitise($_POST["g01-problem-solving"]);
-} elseif ($job_reference_number == "Network Administrator") {
+} elseif ($job_reference_number == "G02-123") {
     $skill1 = sanitise($_POST["g02-exp"]);
     $skill2 = sanitise($_POST["g02-protocols"]);
     $skill3 = sanitise($_POST["g02-firewalls"]);
-} elseif ($job_reference_number == "Data Analyst") {
+} elseif ($job_reference_number == "G03-123") {
     $skill1 = sanitise($_POST["g03-exp"]);
     $skill2 = sanitise($_POST["g03-tools"]);
     $skill3 = sanitise($_POST["g03-analytical"]);
-} elseif ($job_reference_number == "Cybersecurity Analyst") {
+} elseif ($job_reference_number == "G04-123") {
     $skill1 = sanitise($_POST["g04-exp"]);
     $skill2 = sanitise($_POST["g04-security"]);
     $skill3 = sanitise($_POST["g04-threats"]);

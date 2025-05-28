@@ -47,6 +47,8 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "No EOIs found.";
 }
-
+?>
+<div class="spacer"></div>
+<?php
 include "footer.inc";
 ?>
