@@ -54,7 +54,7 @@ if (mysqli_num_rows($result) > 0) {
                 <div class="job-form-section">
                     <form action="apply.php" method="get">
                         <input type="hidden" name="ref" value="{$row['position_reference']}">
-                        <input type="submit" value="Apply for this job" class="apply-button">
+                        <input type="submit" value="Apply for job" class="apply-button">
                     </form>
                 </div>
             </section>
