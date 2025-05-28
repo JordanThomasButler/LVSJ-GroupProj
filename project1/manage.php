@@ -83,7 +83,7 @@ $result = mysqli_query($conn, $query);
         }
         ?>
     </table>
-
+    <div class="spacer"></div>
     <?php include "footer.inc"; ?>
 </body>
 </html>

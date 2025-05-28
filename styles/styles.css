@@ -847,6 +847,19 @@ body.management-page {
     height: 100%;
 }
 
+input[id="email-address"] {
+    width: 11dvw;
+}
+
+body.management-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+div.spacer {
+    height: 45dvh;
+}
+  
 .center-text {
     text-align: center;
 }
