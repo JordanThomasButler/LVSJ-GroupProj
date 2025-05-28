@@ -859,3 +859,33 @@ body.management-page {
 div.spacer {
     height: 45dvh;
 }
+  
+.center-text {
+    text-align: center;
+}
+
+body.management-page {
+    background-color: #A6B2A2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.management-page,
+body.management-page html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body.management-page header.incl {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative;
+    top: 0;
+}
+
+body.management-page footer.incl {
+    margin-top: 370px;
+    bottom: 0;
+    width: 100%;
+}
